@@ -1,0 +1,901 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Sideline</title>
+<meta name="description" content="The Sideline: a daily sporting gazette for the well-read.">
+<meta name="theme-color" content="#1f3d2c">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Cormorant+SC:wght@500;600;700&family=Lora:ital,wght@0,400;0,500;1,400&family=Pinyon+Script&display=swap" rel="stylesheet">
+<style>
+:root{
+  --linen:#f5efe3; --linen-2:#ece3d1; --paper:#fbf8f1; --ink:#2a2620; --ink-2:#6d6457; --rule:#ddd2bd;
+  --racing:#1f3d2c; --moss:#4f6b4a; --sage:#9bb09a; --rose:#c98a92; --blush:#efd9d5; --brass:#b08a4a; --tweed:#7a5f45; --oxblood:#7b2935;
+  --display:"Cormorant Garamond", Georgia, serif; --sc:"Cormorant SC", Georgia, serif; --body:"Lora", Georgia, serif; --script:"Pinyon Script", "Snell Roundhand", cursive;
+  --shadow:0 1px 0 rgba(60,45,25,.05), 0 10px 26px -16px rgba(40,30,15,.35);
+}
+@media (prefers-color-scheme: dark){ :root{ --linen:#131a15; --linen-2:#1a231d; --paper:#1d2620; --ink:#efe6d4; --ink-2:#b2a891; --rule:#33402f; --racing:#cfe0c9; --moss:#a9c2a2; --blush:#3a2a2c; --shadow:none; } }
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html,body{margin:0;background:var(--linen);color:var(--ink)}
+body{font-family:var(--body);font-size:17px;line-height:1.7;-webkit-font-smoothing:antialiased;
+  background-image:radial-gradient(rgba(120,95,60,.06) 1px,transparent 1px);background-size:4px 4px}
+button{font:inherit;color:inherit}
+a{color:inherit}
+.sc{font-family:var(--sc);font-weight:600;letter-spacing:.14em;text-transform:lowercase;font-size:15px}
+.muted{color:var(--ink-2)}
+.hidden{display:none!important}
+.script{font-family:var(--script);font-weight:400}
+
+/* tartan */
+.tartan{background-color:#1f3d2c;background-image:
+ repeating-linear-gradient(90deg,rgba(123,41,53,.6) 0 5px,transparent 5px 36px),
+ repeating-linear-gradient(0deg,rgba(123,41,53,.6) 0 5px,transparent 5px 36px),
+ repeating-linear-gradient(90deg,rgba(214,182,120,.55) 0 1px,transparent 1px 18px),
+ repeating-linear-gradient(0deg,rgba(214,182,120,.55) 0 1px,transparent 1px 18px),
+ repeating-linear-gradient(90deg,rgba(8,22,15,.45) 0 12px,transparent 12px 24px),
+ repeating-linear-gradient(0deg,rgba(8,22,15,.45) 0 12px,transparent 12px 24px)}
+.tartan.heather{background-color:#6e4f5f;background-image:
+ repeating-linear-gradient(90deg,rgba(31,61,44,.55) 0 6px,transparent 6px 34px),
+ repeating-linear-gradient(0deg,rgba(31,61,44,.55) 0 6px,transparent 6px 34px),
+ repeating-linear-gradient(90deg,rgba(245,239,227,.4) 0 1px,transparent 1px 17px),
+ repeating-linear-gradient(0deg,rgba(245,239,227,.4) 0 1px,transparent 1px 17px),
+ repeating-linear-gradient(90deg,rgba(40,20,30,.35) 0 11px,transparent 11px 22px),
+ repeating-linear-gradient(0deg,rgba(40,20,30,.35) 0 11px,transparent 11px 22px)}
+.band{height:9px}
+
+/* masthead */
+header.top{position:sticky;top:0;z-index:20;background:var(--linen);border-bottom:1px solid var(--rule)}
+.bar{display:grid;grid-template-columns:44px 1fr 44px;align-items:center;padding:8px 10px 0;max-width:1100px;margin:0 auto}
+.mast{text-align:center;cursor:pointer;line-height:1}
+.mast .crest{width:34px;height:34px;display:block;margin:0 auto 2px}
+.mast .wm{font-family:var(--display);font-weight:600;font-size:clamp(28px,7.6vw,42px);color:var(--racing);letter-spacing:.02em}
+.mast .wm i{font-family:var(--script);font-style:normal;font-weight:400;color:var(--rose);font-size:.9em;margin-right:4px}
+.mast .tag{font-family:var(--sc);font-size:12px;letter-spacing:.24em;color:var(--ink-2);margin-top:4px}
+.icon-btn{width:40px;height:40px;border:0;background:none;display:grid;place-items:center;cursor:pointer;border-radius:50%;color:var(--racing)}
+.icon-btn svg{width:22px;height:22px}
+.icon-btn.speaking{background:var(--racing);color:var(--linen)}
+nav.sections{max-width:1100px;margin:0 auto;display:flex;gap:20px;overflow-x:auto;padding:8px 16px 8px;scrollbar-width:none}
+nav.sections::-webkit-scrollbar{display:none}
+@media(min-width:900px){nav.sections{justify-content:center}}
+nav.sections button{flex:0 0 auto;border:0;background:none;cursor:pointer;padding:3px 0;border-bottom:2px solid transparent;color:var(--ink-2)}
+nav.sections button.on{color:var(--racing);border-bottom-color:var(--rose)}
+main{max-width:1100px;margin:0 auto;padding:0 0 130px}
+.pad{padding:0 18px}
+
+/* florals */
+.divider{display:flex;justify-content:center;margin:46px 0 8px}
+.divider svg{width:230px;height:34px}
+.sec-head{text-align:center;margin:10px 0 22px;padding:0 18px}
+.sec-head h3{font-family:var(--display);font-weight:600;font-size:clamp(32px,7.4vw,46px);margin:2px 0 0;line-height:1.05;color:var(--racing)}
+.sec-head h3 em{font-family:var(--script);font-style:normal;font-weight:400;color:var(--rose);font-size:1.12em}
+
+/* art */
+.art{position:relative;overflow:hidden;background:#1f3d2c}
+.art svg{position:absolute;inset:0;width:100%;height:100%;display:block}
+.art .shade{position:absolute;inset:0;background:linear-gradient(180deg,rgba(15,28,20,0) 35%,rgba(15,28,20,.82) 100%)}
+
+/* cover */
+.cover{position:relative}
+.cover .track{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;scroll-behavior:smooth}
+.cover .track::-webkit-scrollbar{display:none}
+.slide{flex:0 0 100%;scroll-snap-align:start;position:relative;height:min(76vh,700px);min-height:470px;cursor:pointer;color:#fbf6ea}
+.slide .art{position:absolute;inset:0}
+.slide .copy{position:absolute;left:0;right:0;bottom:0;padding:24px 22px 50px;max-width:760px}
+.slide h2{font-family:var(--display);font-weight:600;font-size:clamp(36px,9.5vw,66px);line-height:1;margin:8px 0 12px}
+.slide .dek{font-style:italic;opacity:.9;max-width:560px;font-size:16px;margin:0 0 14px}
+.slide .read{display:inline-flex;align-items:center;gap:10px;border-bottom:1px solid rgba(255,255,255,.7);padding-bottom:3px}
+.cover .arrow{position:absolute;top:44%;width:46px;height:46px;border-radius:50%;border:1px solid rgba(255,255,255,.65);background:rgba(15,28,20,.35);color:#fff;display:grid;place-items:center;cursor:pointer;backdrop-filter:blur(4px)}
+.cover .arrow.l{left:12px}.cover .arrow.r{right:12px}
+.dots{position:absolute;bottom:20px;left:22px;display:flex;gap:8px}
+.dots i{width:22px;height:2px;background:rgba(255,255,255,.4)}
+.dots i.on{background:var(--blush)}
+.counter{position:absolute;top:16px;right:18px;color:#fbf6ea}
+.issue-note{font-family:var(--display);font-style:italic;font-size:clamp(23px,5.2vw,31px);line-height:1.35;text-align:center;max-width:720px;margin:40px auto 0;padding:0 22px;color:var(--racing)}
+
+/* buttons */
+.btn{display:inline-flex;align-items:center;gap:10px;font-family:var(--sc);font-weight:700;font-size:15px;letter-spacing:.16em;text-transform:lowercase;border:1px solid var(--racing);background:var(--racing);color:var(--linen);padding:13px 22px;cursor:pointer;border-radius:2px}
+.btn.ghost{background:transparent;color:var(--racing)}
+.btn.rose{background:var(--rose);border-color:var(--rose);color:#fff}
+.btn svg{width:16px;height:16px}
+.cta-row{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin:24px 18px 0}
+@media (prefers-color-scheme: dark){.btn{color:#131a15}.btn.ghost{color:var(--racing)}}
+
+/* grid tiles */
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:28px 14px;padding:0 18px}
+@media(min-width:760px){.grid{grid-template-columns:repeat(3,1fr);gap:40px 22px}}
+.tile{cursor:pointer}
+.tile .frame{padding:6px;background:var(--paper);box-shadow:var(--shadow);border:1px solid var(--rule)}
+.tile .art{aspect-ratio:4/5}
+.tile .sc{display:block;margin:12px 0 2px;color:var(--rose);font-size:14px}
+.tile h4{font-family:var(--display);font-weight:600;font-size:21px;line-height:1.15;margin:0;color:var(--ink)}
+.tile.wide{grid-column:1/-1}
+.tile.wide .art{aspect-ratio:16/10}
+.tile.wide h4{font-size:30px}
+.tile .dek{font-size:15px;color:var(--ink-2);margin-top:6px}
+
+/* fact */
+.fact{margin:50px 18px 0;padding:34px 22px;text-align:center;background:var(--paper);border:1px solid var(--rule);position:relative;box-shadow:var(--shadow)}
+.fact:before{content:"";position:absolute;inset:7px;border:1px solid var(--rule);pointer-events:none}
+.fact p{font-family:var(--display);font-style:italic;font-size:clamp(22px,5vw,30px);line-height:1.35;margin:10px auto 0;max-width:740px;color:var(--racing)}
+
+/* list */
+.lst{list-style:none;margin:0 auto;padding:0 18px;max-width:760px}
+.lst li{display:grid;grid-template-columns:100px 1fr;gap:14px;padding:15px 0;border-bottom:1px dashed var(--rule)}
+.lst .when{color:var(--rose);padding-top:4px;font-size:14px}
+.lst .line{font-family:var(--display);font-weight:600;font-size:21px;line-height:1.2}
+.lst .sub{color:var(--ink-2);font-size:15px;margin-top:2px}
+
+/* article card (reusable) */
+.cards{display:grid;grid-template-columns:1fr;gap:16px;padding:0 18px;max-width:1000px;margin:0 auto}
+@media(min-width:700px){.cards{grid-template-columns:1fr 1fr}}
+@media(min-width:1000px){.cards{grid-template-columns:1fr 1fr 1fr}}
+.acard{display:flex;flex-direction:column;background:var(--paper);border:1px solid var(--rule);box-shadow:var(--shadow);text-decoration:none;color:inherit}
+.acard .mast-img{position:relative;aspect-ratio:16/8;display:grid;place-items:center;overflow:hidden}
+.acard .cartouche{background:var(--linen);color:var(--racing);padding:8px 18px;border-radius:50%/42%;border:1px solid var(--brass);font-family:var(--display);font-style:italic;font-weight:600;font-size:20px;max-width:82%;text-align:center;line-height:1.1;box-shadow:0 0 0 4px rgba(245,239,227,.35)}
+.acard .body{padding:14px 16px 16px;display:flex;flex-direction:column;gap:6px;flex:1}
+.acard .meta{display:flex;justify-content:space-between;color:var(--ink-2);font-size:13px}
+.acard h5{font-family:var(--display);font-weight:600;font-size:20px;line-height:1.2;margin:0}
+.acard .go{margin-top:auto;color:var(--rose);font-size:14px}
+.acard .note{font-size:12px;color:var(--ink-2);font-style:italic}
+
+/* athlete profile (reusable) */
+.profiles{display:grid;grid-template-columns:1fr;gap:16px;padding:0 18px;max-width:1000px;margin:0 auto}
+@media(min-width:700px){.profiles{grid-template-columns:1fr 1fr}}
+.pcard{display:grid;grid-template-columns:96px 1fr;gap:16px;background:var(--paper);border:1px solid var(--rule);padding:16px;box-shadow:var(--shadow);position:relative}
+.pcard:after{content:"";position:absolute;inset:5px;border:1px dashed var(--rule);pointer-events:none}
+.pcard .crest svg{width:96px;height:110px;display:block}
+.pcard .nm{font-family:var(--display);font-weight:700;font-size:23px;line-height:1.1;color:var(--racing)}
+.pcard .tm{color:var(--rose);margin:4px 0 6px;font-size:14px}
+.pcard .chips{display:flex;flex-wrap:wrap;gap:6px;margin:8px 0}
+.pcard .chip{font-size:12px;padding:3px 9px;border:1px solid var(--rule);border-radius:99px;background:var(--linen)}
+.pcard a.wiki{font-size:14px;color:var(--moss);position:relative;z-index:1}
+
+/* sport page */
+.hero{position:relative;height:min(58vh,540px);min-height:360px;color:#fbf6ea}
+.hero .art{position:absolute;inset:0}
+.hero .copy{position:absolute;left:0;right:0;bottom:0;padding:22px 22px 26px}
+.hero h2{font-family:var(--display);font-weight:700;font-size:clamp(50px,14vw,104px);line-height:.95;margin:4px 0 4px}
+.hero h2 i{font-family:var(--script);font-style:normal;font-weight:400;font-size:.55em;color:var(--blush);margin-left:8px}
+.subswitch{display:flex;justify-content:center;gap:8px;margin:22px 18px 0;flex-wrap:wrap}
+.subswitch button{border:1px solid var(--racing);background:transparent;color:var(--racing);padding:9px 16px;cursor:pointer;border-radius:99px}
+.subswitch button.on{background:var(--racing);color:var(--linen)}
+.article{max-width:680px;margin:0 auto;padding:0 22px}
+.lede-p{font-size:19px;line-height:1.75;margin-top:26px}
+.lede-p:first-letter{font-family:var(--display);font-weight:700;float:left;font-size:84px;line-height:.8;padding:8px 10px 0 0;color:var(--rose)}
+table.st{width:100%;border-collapse:collapse;font-size:16px;margin-bottom:18px}
+table.st caption{text-align:left;padding:16px 0 6px;color:var(--rose)}
+table.st td{padding:9px 2px;border-bottom:1px dashed var(--rule)}
+table.st td.i{width:26px;color:var(--ink-2);font-size:13px}
+table.st td.r{text-align:right;font-weight:500;white-space:nowrap}
+table.st td.n{text-align:right;color:var(--ink-2);font-size:13px;font-style:italic}
+.two{display:grid;grid-template-columns:1fr;gap:0 30px;padding:0 18px;max-width:1000px;margin:0 auto}
+@media(min-width:760px){.two{grid-template-columns:1fr 1fr}}
+.inj{padding:14px 0;border-bottom:1px dashed var(--rule)}
+.inj .top{display:flex;justify-content:space-between;gap:10px;align-items:baseline}
+.inj .who{font-family:var(--display);font-weight:600;font-size:22px}
+.inj .st{color:var(--oxblood);white-space:nowrap}
+.inj .st.ok{color:var(--moss)}
+
+/* reader */
+.reader{position:fixed;inset:0;z-index:50;background:var(--linen);overflow-y:auto;transform:translateY(100%);transition:transform .45s cubic-bezier(.2,.8,.2,1)}
+.reader.open{transform:none}
+.reader .rhero{position:relative;height:64vh;min-height:420px;color:#fbf6ea}
+.reader .rhero .art{position:absolute;inset:0}
+.reader .rtop{position:absolute;top:0;left:0;right:0;display:flex;justify-content:space-between;align-items:center;padding:12px;z-index:2;color:#fbf6ea}
+.reader .rtop .icon-btn{color:#fbf6ea;background:rgba(15,28,20,.35);backdrop-filter:blur(4px)}
+.reader .rcopy{position:absolute;left:0;right:0;bottom:0;padding:20px 22px 28px;max-width:760px}
+.reader h2{font-family:var(--display);font-weight:700;font-size:clamp(36px,9vw,62px);line-height:1.02;margin:8px 0 0}
+.reader .body{max-width:660px;margin:0 auto;padding:22px 22px 150px}
+.reader .dek{font-family:var(--display);font-style:italic;font-size:24px;line-height:1.35;color:var(--racing);margin:6px 0 18px}
+.reader .body p.par{font-size:18.5px;line-height:1.8;margin:0 0 18px}
+.reader .body p.par:first-of-type:first-letter{font-family:var(--display);font-weight:700;float:left;font-size:86px;line-height:.8;padding:8px 10px 0 0;color:var(--rose)}
+.box{background:var(--paper);border:1px solid var(--rule);padding:20px 20px 8px;margin:26px 0;position:relative;box-shadow:var(--shadow)}
+.box .head{display:flex;align-items:center;gap:10px;margin-bottom:8px;color:var(--rose)}
+.box .stripe{position:absolute;left:0;top:0;bottom:0;width:6px}
+.box p{margin:0 0 12px}
+.why{margin:28px 0;padding:18px 0;border-top:1px solid var(--racing);border-bottom:1px solid var(--rule)}
+.why p{font-family:var(--display);font-size:24px;line-height:1.35;margin:6px 0 0;color:var(--racing)}
+.dinner{background:var(--blush);padding:20px;margin:16px 0}
+.dinner p{font-family:var(--display);font-style:italic;font-size:23px;line-height:1.35;margin:6px 0 0}
+.terms{display:flex;flex-wrap:wrap;gap:8px}
+.term{border:1px solid var(--moss);color:var(--racing);background:transparent;padding:6px 12px;border-radius:99px;cursor:pointer;font-size:14px}
+.term.on{background:var(--racing);color:var(--linen)}
+.termdef{margin:12px 0 4px;font-style:italic;color:var(--ink)}
+.reader .rnav{position:fixed;left:0;right:0;bottom:0;display:flex;justify-content:space-between;align-items:center;padding:10px 14px calc(10px + env(safe-area-inset-bottom));background:var(--linen);border-top:1px solid var(--rule);z-index:3}
+.reader .progress{position:sticky;top:0;height:3px;background:var(--rule);z-index:4}
+.reader .progress i{display:block;height:100%;background:var(--rose);width:0}
+
+/* question */
+.qcard{background:var(--paper);border:1px solid var(--rule);padding:22px 20px;margin:30px 0;box-shadow:var(--shadow);position:relative}
+.qcard .tartan{position:absolute;left:0;right:0;top:0;height:7px}
+.qq{font-family:var(--display);font-weight:600;font-size:clamp(25px,6vw,32px);line-height:1.2;margin:10px 0 16px;color:var(--racing)}
+.opt{display:block;width:100%;text-align:left;font-family:var(--body);font-size:17px;padding:14px 16px;margin:9px 0;border:1px solid var(--rule);background:var(--linen);cursor:pointer;border-radius:2px;color:var(--ink)}
+.opt:hover:not([disabled]){border-color:var(--moss)}
+.opt.right{border-color:var(--moss);box-shadow:inset 4px 0 0 var(--moss);background:color-mix(in srgb,var(--sage) 22%,var(--linen))}
+.opt.wrong{border-color:var(--rose);box-shadow:inset 4px 0 0 var(--rose)}
+.opt[disabled]{cursor:default}
+.explain{margin-top:14px;padding:14px 16px;background:var(--linen-2);border-left:3px solid var(--brass)}
+.shake{animation:shake .4s}@keyframes shake{25%{transform:translateX(-6px)}75%{transform:translateX(6px)}}
+
+/* celebration */
+.celebrate{position:fixed;inset:0;z-index:90;display:grid;place-items:center;background:rgba(245,239,227,.55);backdrop-filter:blur(2px);cursor:pointer}
+@media (prefers-color-scheme: dark){.celebrate{background:rgba(10,16,12,.6)}}
+.celebrate .stage{background:var(--paper);border:1px solid var(--rule);border-radius:6px;padding:16px 16px 22px;box-shadow:0 20px 50px -20px rgba(30,40,30,.45);width:min(92vw,520px);position:relative;overflow:hidden}
+.celebrate .stage:before{content:"";position:absolute;left:0;right:0;top:0;height:8px}
+.celebrate svg.scene{width:100%;height:auto;display:block;background:linear-gradient(#f1e9d8,#e7ddc6);border-radius:3px}
+@media (prefers-color-scheme: dark){.celebrate svg.scene{background:linear-gradient(#26332a,#1d2620)}}
+.celebrate .msg{text-align:center;padding:14px 10px 0}
+.celebrate .msg .big{font-family:var(--script);font-size:clamp(52px,14vw,92px);color:var(--racing);line-height:1;opacity:0;transform:translateY(12px) scale(.96);transition:all .5s}
+.celebrate .msg .small{font-family:var(--display);font-style:italic;font-size:22px;color:var(--oxblood);opacity:0;transition:opacity .5s .2s}
+.celebrate.show .msg .big,.celebrate.show .msg .small{opacity:1;transform:none}
+@media (prefers-color-scheme: dark){.celebrate .msg .big{color:#efe6d4}.celebrate .msg .small{color:var(--rose)}}
+.petal{position:fixed;top:-30px;width:14px;height:10px;border-radius:70% 0 70% 0;z-index:91;pointer-events:none;animation:fall linear forwards}
+@keyframes fall{to{transform:translate(var(--dx),110vh) rotate(var(--rot));opacity:.85}}
+
+/* mini player */
+.player{position:fixed;left:12px;right:12px;bottom:calc(12px + env(safe-area-inset-bottom));z-index:60;background:var(--racing);color:#f5efe3;display:flex;align-items:center;gap:12px;padding:10px 10px 10px 16px;max-width:560px;margin:0 auto;box-shadow:0 10px 30px rgba(0,0,0,.25);transform:translateY(150%);transition:transform .35s;border-radius:4px}
+@media (prefers-color-scheme: dark){.player{background:#2c5340}}
+.player:not(.on){visibility:hidden;pointer-events:none}
+.player.on{transform:none}
+.player .t{flex:1;min-width:0}
+.player .t b{display:block;font-family:var(--sc);font-weight:600;font-size:12px;letter-spacing:.18em;opacity:.8}
+.player .t span{display:block;font-family:var(--display);font-size:18px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.player .icon-btn{color:#f5efe3}
+.wave{display:flex;gap:3px;align-items:end;height:18px}
+.wave i{width:3px;background:var(--blush);animation:w 1s infinite ease-in-out}
+.wave i:nth-child(2){animation-delay:.15s}.wave i:nth-child(3){animation-delay:.3s}.wave i:nth-child(4){animation-delay:.45s}
+@keyframes w{0%,100%{height:4px}50%{height:18px}}
+.player.paused .wave i{animation:none;height:4px}
+.reader.open ~ .player{bottom:calc(74px + env(safe-area-inset-bottom))}
+.spot{outline:2px solid var(--rose);outline-offset:6px}
+
+/* modal */
+.modal{position:fixed;inset:0;z-index:80;background:rgba(20,30,24,.5);display:flex;align-items:flex-end;justify-content:center}
+@media(min-width:700px){.modal{align-items:center}}
+.sheet{background:var(--linen);width:100%;max-width:520px;max-height:92vh;overflow:auto;padding:0 24px calc(26px + env(safe-area-inset-bottom))}
+.sheet .tartan{height:10px;margin:0 -24px 22px}
+.sheet h3{font-family:var(--display);font-weight:700;font-size:38px;line-height:1.05;margin:4px 0 10px;color:var(--racing)}
+.sheet input[type=text],.sheet select{width:100%;font:inherit;font-size:17px;padding:12px 14px;border:1px solid var(--moss);background:var(--paper);color:var(--ink);border-radius:2px}
+.pills{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0}
+.pill{border:1px solid var(--racing);background:none;padding:9px 14px;cursor:pointer;border-radius:99px;color:var(--racing)}
+.pill.on{background:var(--racing);color:var(--linen)}
+.sheet .row{display:flex;gap:10px;margin-top:22px;flex-wrap:wrap}
+.field{margin:16px 0}
+.field .sc{display:block;margin-bottom:6px;color:var(--rose)}
+input[type=range]{width:100%;accent-color:var(--racing)}
+
+/* quiz page */
+.quiz{max-width:640px;margin:0 auto;padding:0 20px}
+.qbar{height:3px;background:var(--rule);margin:24px 0 0}.qbar i{display:block;height:100%;background:var(--rose);transition:width .3s}
+.qmeta{display:flex;justify-content:space-between;margin-top:10px;color:var(--ink-2)}
+.score{text-align:center;padding:36px 0 6px}
+.score .big{font-family:var(--display);font-weight:700;font-size:100px;line-height:1;color:var(--racing)}
+.review{border-top:1px dashed var(--rule);padding:16px 0}
+
+textarea.ask,input.search{width:100%;font:inherit;font-size:17px;padding:14px;border:1px solid var(--moss);background:var(--paper);color:var(--ink);border-radius:2px}
+textarea.ask{min-height:100px;resize:vertical}
+.answer{white-space:pre-wrap;margin-top:22px;font-size:18px;line-height:1.75}
+details{border-bottom:1px dashed var(--rule)}
+details summary{cursor:pointer;font-family:var(--display);font-weight:600;font-size:25px;padding:16px 0;list-style:none;color:var(--racing)}
+details summary::-webkit-details-marker{display:none}
+details summary:after{content:"+";float:right;color:var(--rose)}
+details[open] summary:after{content:"−"}
+dl.gl dt{font-family:var(--display);font-weight:600;font-size:20px;margin-top:14px;color:var(--racing)}
+dl.gl dd{margin:2px 0 0;color:var(--ink-2)}
+
+footer{max-width:760px;margin:60px auto 0;padding:0 18px 30px;text-align:center;color:var(--ink-2);font-size:13px}
+footer .wm{font-family:var(--display);font-weight:600;font-size:26px;color:var(--racing);margin:14px 0 8px}
+.loading{text-align:center;padding:120px 0;font-family:var(--display);font-style:italic;font-size:24px;color:var(--ink-2)}
+.fade{animation:fade .5s ease both}@keyframes fade{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+.toast{position:fixed;left:50%;top:96px;transform:translateX(-50%);z-index:99;background:var(--racing);color:#f5efe3;padding:12px 18px;font-size:14px;max-width:90vw;border-radius:3px}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="rose" viewBox="-20 -20 40 40">
+      <path d="M0-15C9-15 15-8 15 0S9 15 0 15-15 9-15 0-9-15 0-15Z" fill="#c98a92"/>
+      <path d="M0-10C6-10 10-5 10 0S6 10 0 10-10 6-10 0-6-10 0-10Z" fill="#b5727b"/>
+      <path d="M-6 1C-6-5 5-7 6 0S-1 8-3 2 3-3 3 1" stroke="#7b2935" stroke-width="1.6" fill="none" stroke-linecap="round"/>
+    </symbol>
+    <symbol id="leaf" viewBox="-10 -20 20 40">
+      <path d="M0-18C9-8 9 8 0 18-9 8-9-8 0-18Z" fill="#4f6b4a"/>
+      <path d="M0-16V16" stroke="#9bb09a" stroke-width="1"/>
+    </symbol>
+    <symbol id="sprig" viewBox="0 0 100 34">
+      <path d="M2 17C30 17 60 10 98 17" stroke="#4f6b4a" stroke-width="1.4" fill="none"/>
+      <use href="#leaf" x="18" y="2" width="9" height="16" transform="rotate(-50 22 10)"/>
+      <use href="#leaf" x="34" y="15" width="9" height="16" transform="rotate(230 38 23)"/>
+      <use href="#leaf" x="50" y="0" width="9" height="16" transform="rotate(-55 54 8)"/>
+      <use href="#leaf" x="66" y="13" width="9" height="16" transform="rotate(225 70 21)"/>
+      <circle cx="86" cy="12" r="2.6" fill="#c98a92"/><circle cx="80" cy="21" r="2" fill="#b08a4a"/>
+    </symbol>
+    <symbol id="lavender" viewBox="0 0 20 60">
+      <path d="M10 60V8" stroke="#4f6b4a" stroke-width="1.2"/>
+      <g fill="#8d7aa6"><ellipse cx="10" cy="8" rx="3" ry="4"/><ellipse cx="7" cy="15" rx="3" ry="4"/><ellipse cx="13" cy="20" rx="3" ry="4"/><ellipse cx="7" cy="26" rx="3" ry="4"/><ellipse cx="13" cy="31" rx="3" ry="4"/></g>
+    </symbol>
+    <symbol id="divider" viewBox="0 0 230 34">
+      <use href="#sprig" x="0" y="0" width="100" height="34"/>
+      <use href="#sprig" x="0" y="0" width="100" height="34" transform="translate(230 0) scale(-1 1)"/>
+      <use href="#rose" x="101" y="3" width="28" height="28"/>
+    </symbol>
+  </defs>
+</svg>
+
+<header class="top">
+  <div class="tartan band"></div>
+  <div class="bar">
+    <button class="icon-btn" id="btn-settings" aria-label="Settings"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+    <div class="mast" id="wm">
+      <div class="wm"><i>The</i>Sideline</div>
+      <div class="tag">a sporting gazette · <span id="dl">&nbsp;</span></div>
+    </div>
+    <button class="icon-btn" id="btn-voice" aria-label="Narrator"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 10v4h4l5 4V6L8 10H4z"/><path d="M16 9c1.2 1.6 1.2 4.4 0 6M18.5 7c2.4 2.8 2.4 7.2 0 10"/></svg></button>
+  </div>
+  <nav class="sections sc" id="tabs"></nav>
+</header>
+<main id="view"><div class="loading">Pouring the tea and setting the type…</div></main>
+<footer id="foot"></footer>
+
+<div class="reader" id="reader" aria-hidden="true"></div>
+<div class="player" id="player">
+  <div class="wave"><i></i><i></i><i></i><i></i></div>
+  <div class="t"><b id="pl-k">your narrator</b><span id="pl-t">—</span></div>
+  <button class="icon-btn" id="pl-pause" aria-label="Pause"><svg viewBox="0 0 24 24" fill="currentColor"><rect x="6" y="5" width="4" height="14"/><rect x="14" y="5" width="4" height="14"/></svg></button>
+  <button class="icon-btn" id="pl-skip" aria-label="Next"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M5 5l9 7-9 7zM16 5h3v14h-3z"/></svg></button>
+  <button class="icon-btn" id="pl-stop" aria-label="Stop"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+</div>
+<div class="modal hidden" id="modal"><div class="sheet" id="sheet"></div></div>
+
+<script>
+/* ================= utilities ================= */
+const $ = s => document.querySelector(s);
+const $$ = s => Array.from(document.querySelectorAll(s));
+const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const store = { get(k,d){ try{ const v=localStorage.getItem(k); return v==null?d:JSON.parse(v);}catch(e){return d;} }, set(k,v){ try{ localStorage.setItem(k,JSON.stringify(v)); }catch(e){} } };
+const hash = s => { let h=2166136261; for (const c of String(s)) { h ^= c.charCodeAt(0); h = Math.imul(h,16777619); } return h>>>0; };
+const rng = seed => () => { seed |= 0; seed = seed + 0x6D2B79F5 | 0; let t = Math.imul(seed ^ seed>>>15, 1|seed); t = t + Math.imul(t ^ t>>>7, 61|t) ^ t; return ((t ^ t>>>14)>>>0)/4294967296; };
+const reduceMotion = window.matchMedia && matchMedia("(prefers-reduced-motion: reduce)").matches;
+const ICON = {
+  play:'<svg viewBox="0 0 24 24" fill="currentColor"><path d="M7 5l12 7-12 7z"/></svg>',
+  left:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M15 5l-7 7 7 7"/></svg>',
+  right:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 5l7 7-7 7"/></svg>',
+  close:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6 6l12 12M18 6L6 18"/></svg>',
+  speak:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 10v4h4l5 4V6L8 10H4z"/><path d="M16 9c1.2 1.6 1.2 4.4 0 6"/></svg>',
+  arrow:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" style="width:18px;height:18px"><path d="M4 12h15M14 7l5 5-5 5"/></svg>'
+};
+const divider = () => `<div class="divider"><svg viewBox="0 0 230 34"><use href="#divider"/></svg></div>`;
+const head = (kick, title) => `${divider()}<div class="sec-head"><div class="sc muted">${kick}</div><h3>${title}</h3></div>`;
+function toast(m){ const t=document.createElement("div"); t.className="toast"; t.textContent=m; document.body.appendChild(t); setTimeout(()=>t.remove(),3800); }
+
+/* ================= sporting-print artwork ================= */
+const PALETTES = [
+  {bg:"#1f3d2c", bg2:"#2f5a42", fg:"#f3ead8", ac:"#e3b7b4", ac2:"#c9a35a"},  // racing green
+  {bg:"#e9dfca", bg2:"#f6efe1", fg:"#1f3d2c", ac:"#c98a92", ac2:"#b08a4a"},  // linen print
+  {bg:"#5e4352", bg2:"#86657a", fg:"#f6ece6", ac:"#e7c9a0", ac2:"#9bb09a"},  // heather
+  {bg:"#7a5f45", bg2:"#a3825f", fg:"#f5ecdc", ac:"#efd2cc", ac2:"#2f5a42"},  // tweed
+  {bg:"#1d2a3a", bg2:"#34485f", fg:"#efe7d6", ac:"#c98a92", ac2:"#c9a35a"},  // midnight
+  {bg:"#9bb09a", bg2:"#c3d0bd", fg:"#1f3d2c", ac:"#7b2935", ac2:"#b08a4a"}   // sage
+];
+let ART_ID = 0;
+function art(sport, seedStr, opts={}){
+  const R = rng(hash(seedStr + sport)), id = "a"+(ART_ID++), W=800, H=1000;
+  const P = PALETTES[opts.palette ?? Math.floor(R()*PALETTES.length)];
+  const v = opts.variant ?? Math.floor(R()*2);
+  const S = (c,o=1,w=3) => `stroke="${c}" stroke-opacity="${o}" stroke-width="${w}" fill="none"`;
+  let g = `<rect width="${W}" height="${H}" fill="url(#${id}bg)"/><rect width="${W}" height="${H}" fill="url(#${id}hatch)" opacity=".5"/>`;
+  const defs = `<defs>
+    <linearGradient id="${id}bg" x1="0" y1="0" x2=".2" y2="1"><stop offset="0" stop-color="${P.bg2}"/><stop offset="1" stop-color="${P.bg}"/></linearGradient>
+    <radialGradient id="${id}glow" cx="${35+R()*30}%" cy="${10+R()*15}%" r="70%"><stop offset="0" stop-color="${P.fg}" stop-opacity=".3"/><stop offset=".6" stop-color="${P.fg}" stop-opacity="0"/></radialGradient>
+    <radialGradient id="${id}vig" cx="50%" cy="45%" r="78%"><stop offset=".6" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".4"/></radialGradient>
+    <linearGradient id="${id}beam" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="${P.fg}" stop-opacity=".5"/><stop offset="1" stop-color="${P.fg}" stop-opacity="0"/></linearGradient>
+    <radialGradient id="${id}ball" cx="35%" cy="30%" r="75%"><stop offset="0" stop-color="${P.ac}"/><stop offset="1" stop-color="${P.ac2}"/></radialGradient>
+    <pattern id="${id}hatch" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(35)"><line x1="0" y1="0" x2="0" y2="8" stroke="${P.fg}" stroke-opacity=".06" stroke-width="2"/></pattern>
+    <filter id="${id}grain"><feTurbulence type="fractalNoise" baseFrequency=".85" numOctaves="2" stitchTiles="stitch"/><feColorMatrix values="0 0 0 0 .35  0 0 0 0 .28  0 0 0 0 .18  0 0 0 .35 0"/></filter>
+  </defs>`;
+  const ivy = (y) => { let s=""; for (let i=0;i<70;i++){ const x=R()*W, yy=y+R()*70; s += `<ellipse cx="${x}" cy="${yy}" rx="${7+R()*7}" ry="${4+R()*4}" fill="${R()>.5?'#4f6b4a':'#6f8b67'}" transform="rotate(${R()*180} ${x} ${yy})"/>`; } return s; };
+  if (sport==="Football"){
+    if (v===0){
+      g += `<rect width="${W}" height="${H}" fill="url(#${id}glow)"/>`; const hz=360;
+      g += `<path d="M0 ${H} L${W} ${H} L${W*.66} ${hz} L${W*.34} ${hz} Z" fill="${P.fg}" fill-opacity=".06"/>`;
+      for (let i=0;i<=12;i++){ const t=i/12, y=hz+(H-hz)*Math.pow(t,1.8), half=W*.16+(W*.34)*Math.pow(t,1.8)+W*.2*Math.pow(t,2.2); g += `<line x1="${W/2-half}" y1="${y}" x2="${W/2+half}" y2="${y}" ${S(P.fg,.18+t*.5,1+t*3)}/>`; }
+      g += `<path d="M${W/2-60} ${hz-10} V${hz-170} M${W/2+60} ${hz-10} V${hz-170} M${W/2-60} ${hz-90} H${W/2+60} M${W/2} ${hz-90} V${hz+30}" ${S(P.ac2,.9,6)}/>`;
+      for (let i=0;i<4;i++){ const x=80+i*210; g += `<polygon points="${x},0 ${x+40},0 ${W/2+(x-W/2)*.3},${hz+40} ${W/2+(x-W/2)*.3-30},${hz+40}" fill="url(#${id}beam)" opacity=".35"/>`; }
+    } else {
+      g += `<g transform="translate(${W/2} ${H*.46}) rotate(${-35+R()*20})"><ellipse rx="370" ry="205" fill="url(#${id}ball)"/><ellipse rx="370" ry="205" ${S(P.fg,.3,2)}/>
+        <path d="M-290-60Q0-130 290-60" ${S(P.fg,.55,3)}/><path d="M-290 60Q0 130 290 60" ${S(P.fg,.55,3)}/>
+        <line x1="-120" y1="0" x2="120" y2="0" ${S(P.fg,.95,10)} stroke-linecap="round"/>${[-90,-54,-18,18,54,90].map(x=>`<line x1="${x}" y1="-26" x2="${x}" y2="26" ${S(P.fg,.95,8)} stroke-linecap="round"/>`).join("")}</g>`;
+    }
+  } else if (sport==="Basketball"){
+    if (v===0){
+      for (let i=0;i<16;i++) g += `<rect x="${i*50}" y="0" width="50" height="${H}" fill="${P.ac2}" fill-opacity="${.04+R()*.1}"/>`;
+      g += `<rect width="${W}" height="${H}" fill="url(#${id}glow)"/><rect x="${W/2-150}" y="${H-560}" width="300" height="560" ${S(P.fg,.8,4)}/><circle cx="${W/2}" cy="${H-560}" r="150" ${S(P.fg,.8,4)}/>`;
+      g += `<path d="M${W/2-360} ${H}L${W/2-360} ${H-200}A360 360 0 0 1 ${W/2+360} ${H-200}L${W/2+360} ${H}" ${S(P.fg,.8,4)}/>`;
+      g += `<rect x="${W/2-110}" y="170" width="220" height="140" ${S(P.fg,.8,5)}/><ellipse cx="${W/2}" cy="330" rx="46" ry="11" ${S(P.ac,1,6)}/>` + [...Array(7)].map((_,i)=>`<line x1="${W/2-44+i*14.6}" y1="333" x2="${W/2-30+i*10}" y2="400" ${S(P.fg,.6,2)}/>`).join("");
+    } else {
+      g += `<polygon points="${W/2-60},0 ${W/2+60},0 ${W/2+380},${H} ${W/2-380},${H}" fill="url(#${id}beam)" opacity=".32"/>`;
+      const cx=W/2+(R()-.5)*120, cy=H*.5, r=270;
+      g += `<circle cx="${cx}" cy="${cy}" r="${r}" fill="url(#${id}ball)"/><g ${S(P.bg,.85,8)}><line x1="${cx-r}" y1="${cy}" x2="${cx+r}" y2="${cy}"/><line x1="${cx}" y1="${cy-r}" x2="${cx}" y2="${cy+r}"/><path d="M${cx-r*.72} ${cy-r*.69}Q${cx-r*.2} ${cy} ${cx-r*.72} ${cy+r*.69}"/><path d="M${cx+r*.72} ${cy-r*.69}Q${cx+r*.2} ${cy} ${cx+r*.72} ${cy+r*.69}"/></g><ellipse cx="${cx}" cy="${cy+r+40}" rx="${r*.8}" ry="24" fill="#000" fill-opacity=".3"/>`;
+    }
+  } else if (sport==="Soccer"){
+    if (v===0){
+      for (let i=0;i<10;i++) g += `<rect x="0" y="${i*100}" width="${W}" height="100" fill="${P.fg}" fill-opacity="${i%2?.03:.09}"/>`;
+      g += `<rect x="70" y="70" width="${W-140}" height="${H-140}" ${S(P.fg,.7,3)}/><line x1="70" y1="${H/2}" x2="${W-70}" y2="${H/2}" ${S(P.fg,.7,3)}/><circle cx="${W/2}" cy="${H/2}" r="110" ${S(P.fg,.7,3)}/><circle cx="${W/2}" cy="${H/2}" r="6" fill="${P.fg}"/>`;
+      g += `<rect x="${W/2-180}" y="70" width="360" height="150" ${S(P.fg,.7,3)}/><rect x="${W/2-180}" y="${H-220}" width="360" height="150" ${S(P.fg,.7,3)}/>`;
+      const bx=200+R()*400, by=260+R()*480; g += `<circle cx="${bx}" cy="${by}" r="22" fill="${P.ac}"/><path d="M${bx} ${by}Q${bx-160} ${by-140} ${bx-300} ${by-60}" ${S(P.ac,.6,2)} stroke-dasharray="6 10"/>`;
+    } else {
+      g += `<rect width="${W}" height="${H}" fill="url(#${id}glow)"/>`;
+      [[90,180],[710,180],[250,120],[550,120]].forEach(([x,y])=>{ g += `<polygon points="${x-30},${y} ${x+30},${y} ${W/2+(x-W/2)*.2+160},${H} ${W/2+(x-W/2)*.2-160},${H}" fill="url(#${id}beam)" opacity=".26"/>`; for (let r=0;r<3;r++) for (let c=0;c<4;c++) g += `<circle cx="${x-24+c*16}" cy="${y-28+r*14}" r="5" fill="${P.fg}"/>`; g += `<line x1="${x}" y1="${y}" x2="${x}" y2="${y+260}" ${S(P.fg,.4,3)}/>`; });
+      for (let i=0;i<240;i++) g += `<circle cx="${R()*W}" cy="${640+R()*120}" r="${1.5+R()*2.5}" fill="${R()>.8?P.ac:P.fg}" fill-opacity="${.2+R()*.4}"/>`;
+      g += `<path d="M0 760Q${W/2} 700 ${W} 760L${W} ${H}L0 ${H}Z" fill="#4f6b4a" fill-opacity=".55"/>`;
+    }
+  } else if (sport==="Baseball"){
+    if (v===0){
+      g += `<rect width="${W}" height="${H}" fill="url(#${id}glow)"/>`; const cx=W/2, cy=H*.66, s=240;
+      g += `<rect x="0" y="180" width="${W}" height="110" fill="#7b2935" fill-opacity=".55"/>` + [...Array(9)].map((_,i)=>`<line x1="0" y1="${190+i*12}" x2="${W}" y2="${190+i*12}" ${S(P.fg,.12,1)}/>`).join("") + ivy(170);
+      g += `<path d="M${cx} ${cy+s*1.1}L${cx-s*2} ${cy-s*.9}A${s*2.7} ${s*2.7} 0 0 1 ${cx+s*2} ${cy-s*.9}Z" fill="#4f6b4a" fill-opacity=".35"/>`;
+      g += `<polygon points="${cx},${cy+s} ${cx-s},${cy} ${cx},${cy-s} ${cx+s},${cy}" fill="${P.ac2}" fill-opacity=".45"/><polygon points="${cx},${cy+s*.72} ${cx-s*.72},${cy} ${cx},${cy-s*.72} ${cx+s*.72},${cy}" fill="#4f6b4a" fill-opacity=".7"/><circle cx="${cx}" cy="${cy}" r="30" fill="${P.ac2}" fill-opacity=".7"/>`;
+      [[cx,cy+s],[cx-s,cy],[cx,cy-s],[cx+s,cy]].forEach(([x,y])=> g += `<rect x="${x-11}" y="${y-11}" width="22" height="22" fill="${P.fg}" transform="rotate(45 ${x} ${y})"/>`);
+    } else {
+      const cx=W/2, cy=H*.48, r=290;
+      g += `<circle cx="${cx}" cy="${cy}" r="${r}" fill="#f7f1e4"/><circle cx="${cx-80}" cy="${cy-90}" r="${r}" fill="#fff" fill-opacity=".25"/>`;
+      const seam = d => { let p="", t=""; for (let i=0;i<=26;i++){ const a=-1.1+i*2.2/26, x=cx+d*(r*.62-Math.cos(a)*r*.32), y=cy+Math.sin(a)*r*.86; p += (i?"L":"M")+x.toFixed(1)+" "+y.toFixed(1); t += `<line x1="${x-13}" y1="${y-7*d}" x2="${x+13}" y2="${y+7*d}" stroke="#7b2935" stroke-width="5" stroke-linecap="round"/>`; } return `<path d="${p}" stroke="#7b2935" stroke-width="3" fill="none" opacity=".6"/>`+t; };
+      g += seam(1)+seam(-1)+`<circle cx="${cx}" cy="${cy}" r="${r}" fill="none" stroke="#000" stroke-opacity=".1" stroke-width="28"/>`;
+    }
+  } else { // Olympics: laurel, medal, torch
+    g += `<rect width="${W}" height="${H}" fill="url(#${id}glow)"/>`;
+    const cx=W/2, cy=H*.47;
+    for (let i=0;i<14;i++){ const a=Math.PI*(0.62+i*0.055); [1,-1].forEach(d=>{ const x=cx+d*Math.cos(a)*-260, y=cy+Math.sin(a)*260; g += `<ellipse cx="${x}" cy="${y}" rx="34" ry="13" fill="#4f6b4a" transform="rotate(${d*(i*9-30)} ${x} ${y})"/>`; }); }
+    g += `<path d="M${cx-90} 120 L${cx} ${cy-120} L${cx+90} 120" ${S(P.ac,.9,26)}/><circle cx="${cx}" cy="${cy}" r="150" fill="${P.ac2}"/><circle cx="${cx}" cy="${cy}" r="122" ${S(P.fg,.7,4)}/>`;
+    g += `<text x="${cx}" y="${cy+40}" text-anchor="middle" font-family="Cormorant Garamond, Georgia, serif" font-weight="700" font-size="120" fill="${P.bg}" fill-opacity=".85">${["I","★","28"][Math.floor(R()*3)]}</text>`;
+  }
+  // floral corners & frame
+  if (opts.frame !== false){
+    g += `<rect x="26" y="26" width="${W-52}" height="${H-52}" ${S(P.fg,.35,2)}/><rect x="38" y="38" width="${W-76}" height="${H-76}" ${S(P.fg,.2,1)}/>`;
+    g += `<use href="#sprig" x="30" y="30" width="200" height="68"/><use href="#rose" x="20" y="20" width="44" height="44"/>`;
+    g += `<g transform="translate(${W} 0) scale(-1 1)"><use href="#sprig" x="30" y="30" width="200" height="68"/><use href="#rose" x="20" y="20" width="44" height="44"/></g>`;
+  }
+  if (opts.word) g += `<text x="${W-60}" y="150" text-anchor="end" font-family="Pinyon Script, cursive" font-size="110" fill="${P.fg}" fill-opacity=".22">${esc(opts.word)}</text>`;
+  g += `<rect width="${W}" height="${H}" fill="url(#${id}vig)"/><rect width="${W}" height="${H}" filter="url(#${id}grain)" opacity=".5"/>`;
+  return `<div class="art"><svg viewBox="0 0 ${W} ${H}" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">${defs}${g}</svg>${opts.shade===false?"":'<div class="shade"></div>'}</div>`;
+}
+
+/* ================= reusable components ================= */
+function fmtShort(iso){ if(!iso) return "Recent"; if(/^\d{4}-\d{2}$/.test(iso)) return new Date(iso+"-15T12:00:00").toLocaleDateString("en-GB",{month:"long",year:"numeric"}); const d=new Date(iso+"T12:00:00"); return isNaN(d)?iso:d.toLocaleDateString("en-GB",{day:"numeric",month:"short",year:"numeric"}); }
+// Article card: original headline, publisher, date, link. Publishers' images are not reproduced, so a themed default graphic is shown.
+function ArticleCard(a, sport){
+  const heather = hash(a.publisher)%2 ? " heather" : "";
+  return `<a class="acard" href="${esc(a.url)}" target="_blank" rel="noopener">
+    <div class="mast-img tartan${heather}"><div class="cartouche">${esc(a.publisher)}</div></div>
+    <div class="body"><div class="meta sc"><span>${esc(sport||"")}</span><span>${esc(fmtShort(a.date))}</span></div>
+      <h5>${esc(a.headline)}</h5><span class="go sc">read at ${esc(a.publisher)} ↗</span></div></a>`;
+}
+function initials(n){ return n.replace(/[^\p{L} ]/gu,"").split(" ").filter(Boolean).map(w=>w[0]).slice(0,2).join("").toUpperCase(); }
+function crest(name){
+  const R = rng(hash(name)), leaves = [...Array(9)].map((_,i)=>{ const a=Math.PI*(.62+i*.085); return [1,-1].map(d=>{ const x=50+d*Math.cos(a)*-40, y=52+Math.sin(a)*40; return `<ellipse cx="${x}" cy="${y}" rx="7" ry="3" fill="#4f6b4a" transform="rotate(${d*(i*14-40)} ${x} ${y})"/>`; }).join(""); }).join("");
+  const fill = ["#1f3d2c","#5e4352","#7a5f45","#1d2a3a"][Math.floor(R()*4)];
+  return `<svg viewBox="0 0 100 114" aria-hidden="true"><path d="M50 4L90 16V58C90 84 72 100 50 110 28 100 10 84 10 58V16Z" fill="${fill}"/><path d="M50 10L84 20V58C84 80 69 94 50 103 31 94 16 80 16 58V20Z" fill="none" stroke="#c9a35a" stroke-width="1.2"/>${leaves}<text x="50" y="62" text-anchor="middle" font-family="Cormorant Garamond, Georgia, serif" font-weight="700" font-size="28" fill="#f3ead8">${esc(initials(name))}</text><use href="#rose" x="41" y="80" width="18" height="18"/></svg>`;
+}
+const wikiURL = p => p.wiki || ("https://en.wikipedia.org/w/index.php?search=" + encodeURIComponent(p.name + " " + (p.team||"")));
+function AthleteProfile(p){
+  return `<div class="pcard"><div class="crest">${crest(p.name)}</div><div>
+    <div class="nm">${esc(p.name)}</div><div class="tm sc">${esc([p.team,p.position].filter(Boolean).join(" · "))}</div>
+    <div>${esc(p.blurb||"")}</div>
+    ${(p.facts||[]).length?`<div class="chips">${p.facts.map(f=>`<span class="chip">${esc(f)}</span>`).join("")}</div>`:""}
+    <a class="wiki" href="${esc(wikiURL(p))}" target="_blank" rel="noopener">Photographs &amp; biography on Wikipedia ↗</a></div></div>`;
+}
+
+/* ================= narrator ================= */
+const Narr = {
+  supported: "speechSynthesis" in window && "SpeechSynthesisUtterance" in window,
+  voices: [], queue: [], idx: 0, active: false, paused: false, items: [], onDone: null,
+  PREF: ["Lee","Gordon","Jamie","Oliver","Arthur","Daniel","Malcolm","Google UK English Male","Microsoft Ryan","Microsoft Thomas","Microsoft George","Microsoft Alfie","Microsoft Oliver"],
+  FEMALE: /(kate|serena|stephanie|martha|fiona|moira|tessa|karen|samantha|susan|hazel|libby|sonia|maisie|female|catherine|victoria|allison|ava|zoe|nicky|shelley|sandy|flo|grandma|eddy|reed|rocko)/i,
+  quality(v){ return /premium/i.test(v.name)?3:/enhanced|neural|natural/i.test(v.name)?2:/google|microsoft/i.test(v.name)?1:0; },
+  NOVELTY: /\b(albert|bad news|bahh|bells|boing|bubbles|cellos|good news|jester|organ|superstar|trinoids|whisper|wobble|zarvox|fred|junior|ralph|kathy|princess|eddy|flo|grandma|grandpa|reed|rocko|sandy|shelley|hysterical|deranged|pipe organ)\b/i,
+  load(){ if (!this.supported) return; const get=()=>{ this.voices = speechSynthesis.getVoices().filter(v=>/^en/i.test(v.lang) && !this.NOVELTY.test(v.name)); }; get(); speechSynthesis.onvoiceschanged = get; },
+  britishMen(){ const au=v=>/en[-_]AU/i.test(v.lang)?1:0; return this.voices.filter(v=>!this.FEMALE.test(v.name)).sort((a,b)=>{ const d=au(b)-au(a); if(d) return d; const q=this.quality(b)-this.quality(a); if(q) return q; const ia=this.PREF.findIndex(p=>a.name.includes(p)), ib=this.PREF.findIndex(p=>b.name.includes(p)); return (ia<0?99:ia)-(ib<0?99:ib); }); },
+  voice(){ const saved=store.get("sideline-voice-au",null); if (saved){ const v=this.voices.find(v=>v.name===saved); if (v) return v; }
+    const men=this.britishMen(); if (men.length) return men[0];
+    return this.voices.find(v=>/en[-_]GB/i.test(v.lang)) || this.voices.find(v=>!this.FEMALE.test(v.name)) || this.voices[0] || null; },
+  tone(u){ u.rate=store.get("sideline-rate",.9); u.pitch=store.get("sideline-pitch",.8); },
+  chunk(text){ const parts=String(text).replace(/\s+/g," ").match(/[^.!?]+[.!?]+["”']?|\S[^.!?]*$/g)||[text]; const out=[]; let cur=""; for (const p of parts){ if ((cur+p).length>220&&cur){ out.push(cur.trim()); cur=p; } else cur+=" "+p; } if (cur.trim()) out.push(cur.trim()); return out; },
+  play(items,{kicker="your narrator",onDone}={}){
+    if (!this.supported){ toast("This browser doesn't offer a voice. Try Safari or Chrome on your phone."); return; }
+    this.stop(); this.items=items; this.queue=[];
+    items.forEach((it,i)=>this.chunk(it.text).forEach((c,j)=>this.queue.push({text:c,item:i,first:j===0})));
+    this.idx=0; this.active=true; this.paused=false; this.onDone=onDone;
+    $("#pl-k").textContent=kicker; $("#player").classList.add("on"); $("#player").classList.remove("paused"); $("#btn-voice").classList.add("speaking"); this.next();
+  },
+  say(text){ if (!this.supported) return; try{ speechSynthesis.cancel(); const u=new SpeechSynthesisUtterance(text); const v=this.voice(); if (v){u.voice=v;u.lang=v.lang;} this.tone(u); speechSynthesis.speak(u);}catch(e){} },
+  next(){ if (!this.active) return; if (this.idx>=this.queue.length){ const cb=this.onDone; this.stop(); if (cb) cb(); return; }
+    const q=this.queue[this.idx], it=this.items[q.item]; if (q.first){ $("#pl-t").textContent=it.title||""; try{ it.onStart&&it.onStart(); }catch(e){} }
+    const u=new SpeechSynthesisUtterance(q.text); const v=this.voice(); if (v){u.voice=v;u.lang=v.lang;} else u.lang="en-GB";
+    this.tone(u);
+    u.onend=()=>{ if (!this.active) return; this.idx++; this.next(); };
+    u.onerror=e=>{ if (!this.active||e.error==="interrupted"||e.error==="canceled") return; this.idx++; this.next(); };
+    speechSynthesis.speak(u); },
+  skip(){ if (!this.active) return; const cur=this.queue[this.idx]?.item??0; let n=this.idx; while(n<this.queue.length&&this.queue[n].item===cur) n++; this.idx=n; speechSynthesis.cancel(); setTimeout(()=>this.next(),60); },
+  togglePause(){ if (!this.active) return; if (this.paused){ speechSynthesis.resume(); this.paused=false; } else { speechSynthesis.pause(); this.paused=true; } $("#player").classList.toggle("paused",this.paused); },
+  stop(){ this.active=false; this.paused=false; try{ speechSynthesis.cancel(); }catch(e){} $("#player").classList.remove("on"); $("#btn-voice").classList.remove("speaking"); $$(".spot").forEach(e=>e.classList.remove("spot")); }
+};
+Narr.load();
+$("#pl-pause").onclick=()=>Narr.togglePause(); $("#pl-skip").onclick=()=>Narr.skip(); $("#pl-stop").onclick=()=>Narr.stop();
+
+/* ================= celebrations ================= */
+const CHEERS = {
+  Basketball:["Swish!","Nothing but net. Too easy."],
+  Football:["Touchdown!","What a bomb. Get around it!"],
+  Soccer:["Goal!","Top bins. Absolute ripper."],
+  Baseball:["Home run!","Clean over the ivy. Beauty!"],
+  Olympics:["Gold!","You little ripper."]
+};
+const AUSSIE_CHEER={Basketball:"Swish! Nothing but net. Too easy, mate.",Football:"Touchdown! What a bomb. Get around it!",Soccer:"Goal! Top bins. Absolute ripper.",Baseball:"Home run! Clean over the ivy. Beauty!",Olympics:"Gold! You little ripper. Onto the top step."};
+function scene(sport){
+  const ball = (r,fill,extra="") => `<g id="cb"><circle r="${r}" fill="${fill}" stroke="#2a2620" stroke-width="1.5"/>${extra}</g>`;
+  if (sport==="Basketball") return { svg:`<rect x="300" y="40" width="130" height="86" rx="4" fill="#fbf8f1" stroke="#1f3d2c" stroke-width="4"/><rect x="342" y="72" width="46" height="34" fill="none" stroke="#c98a92" stroke-width="3"/><g id="net">${[...Array(7)].map((_,i)=>`<line x1="${336+i*9}" y1="112" x2="${342+i*6.5}" y2="152" stroke="#1f3d2c" stroke-width="1.6"/>`).join("")}</g><ellipse cx="365" cy="112" rx="32" ry="7" fill="none" stroke="#c98a92" stroke-width="5"/>` + ball(17,"#d9824b",`<path d="M-17 0H17M0-17V17M-11-12Q-4 0-11 12M11-12Q4 0 11 12" stroke="#2a2620" stroke-width="1.3" fill="none"/>`),
+    path:t=>{ if (t<.78){ const u=t/.78; return [40+u*325, 260-Math.sin(u*Math.PI)*230+u*(-148)]; } const u=(t-.78)/.22; return [365, 112+u*80]; }, spin:720 };
+  if (sport==="Football") return { svg:`<path d="M380 250V170M340 170H420M340 170V60M420 170V60" stroke="#c9a35a" stroke-width="7" fill="none" stroke-linecap="round"/><rect x="0" y="250" width="520" height="40" fill="#4f6b4a"/><rect x="300" y="250" width="160" height="40" fill="#1f3d2c"/>` + `<g id="cb"><ellipse rx="22" ry="13" fill="#7a5f45" stroke="#2a2620" stroke-width="1.5"/><path d="M-8 0H8M-5-3V3M0-3V3M5-3V3" stroke="#fbf8f1" stroke-width="1.6"/></g>`,
+    path:t=>[30+t*350, 240-Math.sin(t*Math.PI*.85)*235], spin:30, rot:t=>-40+t*80 };
+  if (sport==="Soccer") return { svg:`<path d="M330 260V90H500V260" fill="none" stroke="#fbf8f1" stroke-width="6"/><g id="net" opacity=".6">${[...Array(10)].map((_,i)=>`<line x1="${334+i*17}" y1="94" x2="${334+i*17}" y2="258" stroke="#1f3d2c" stroke-width="1"/>`).join("")}${[...Array(10)].map((_,i)=>`<line x1="334" y1="${98+i*17}" x2="496" y2="${98+i*17}" stroke="#1f3d2c" stroke-width="1"/>`).join("")}</g><rect x="0" y="258" width="520" height="30" fill="#4f6b4a"/>` + ball(15,"#fbf8f1",`<path d="M0-6L6-2 4 5H-4L-6-2Z" fill="#2a2620"/>`),
+    path:t=>{ const x=40+t*400, y=245-Math.sin(t*Math.PI*.92)*150 - t*20; return [x,y]; }, spin:900, netAt:.92 };
+  if (sport==="Baseball") return { svg:`<rect x="290" y="150" width="230" height="110" fill="#7b2935"/>${[...Array(8)].map((_,i)=>`<line x1="290" y1="${160+i*13}" x2="520" y2="${160+i*13}" stroke="#efd2cc" stroke-opacity=".3"/>`).join("")}${[...Array(40)].map((_,i)=>{const x=295+((i*53)%225), y=150+((i*29)%60); return `<ellipse cx="${x}" cy="${y}" rx="10" ry="5" fill="${i%2?'#4f6b4a':'#6f8b67'}" transform="rotate(${i*37} ${x} ${y})"/>`;}).join("")}<rect x="0" y="260" width="520" height="30" fill="#4f6b4a"/><g id="flash" opacity="0"><circle cx="40" cy="240" r="30" fill="#c9a35a" opacity=".5"/></g>` + ball(10,"#fbf8f1",`<path d="M-6-7Q-2 0-6 7M6-7Q2 0 6 7" stroke="#7b2935" stroke-width="1.6" fill="none"/>`),
+    path:t=>[40+t*500, 240-Math.sin(t*Math.PI*.8)*260], spin:540, flash:true };
+  return { svg:`${[...Array(14)].map((_,i)=>{const a=Math.PI*(.62+i*.055); return [1,-1].map(d=>{const x=260+d*Math.cos(a)*-120, y=170+Math.sin(a)*120; return `<ellipse cx="${x}" cy="${y}" rx="18" ry="7" fill="#4f6b4a" transform="rotate(${d*(i*9-30)} ${x} ${y})"/>`;}).join("");}).join("")}` + `<g id="cb"><path d="M-30-200L0-60 30-200" stroke="#c98a92" stroke-width="16" fill="none"/><circle r="52" fill="#c9a35a" stroke="#7a5f45" stroke-width="3"/><circle r="40" fill="none" stroke="#fbf8f1" stroke-opacity=".6" stroke-width="2"/><text y="14" text-anchor="middle" font-family="Cormorant Garamond, serif" font-weight="700" font-size="40" fill="#7a5f45">I</text></g>`,
+    path:t=>{ const e = t<.7 ? (t/.7)*(t/.7) : 1 - Math.abs(Math.sin((t-.7)/.3*Math.PI*2))*.06*(1-(t-.7)/.3); return [260, -60 + e*230]; }, spin:0 };
+}
+function petals(n=34){ const cols=["#c98a92","#efd2cc","#9bb09a","#b08a4a","#e3b7b4"]; for (let i=0;i<n;i++){ const p=document.createElement("i"); p.className="petal"; p.style.left=(Math.random()*100)+"vw"; p.style.background=cols[i%cols.length]; p.style.setProperty("--dx",((Math.random()-.5)*160)+"px"); p.style.setProperty("--rot",(Math.random()*720-360)+"deg"); p.style.animationDuration=(2.4+Math.random()*2)+"s"; p.style.animationDelay=(Math.random()*.6)+"s"; document.body.appendChild(p); setTimeout(()=>p.remove(),5200); } }
+function celebrate(sport){
+  sport = CHEERS[sport] ? sport : "Soccer";
+  const [big, small] = CHEERS[sport], sc = scene(sport);
+  const ov = document.createElement("div"); ov.className="celebrate";
+  ov.innerHTML = `<div class="stage"><div class="tartan" style="position:absolute;left:0;right:0;top:0;height:8px"></div><svg class="scene" viewBox="0 0 520 300" style="margin-top:6px">${sc.svg}</svg><div class="msg"><div class="big">${big}</div><div class="small">${small}</div></div></div>`;
+  document.body.appendChild(ov);
+  const b = ov.querySelector("#cb"), net = ov.querySelector("#net"), flash = ov.querySelector("#flash");
+  const dur = reduceMotion ? 1 : 1500; const t0 = performance.now();
+  if (flash){ flash.style.transition="opacity .25s"; flash.setAttribute("opacity","1"); setTimeout(()=>flash.setAttribute("opacity","0"),250); }
+  const step = now => { const t=Math.min(1,(now-t0)/dur); const [x,y]=sc.path(t); const rot = sc.rot ? sc.rot(t) : t*(sc.spin||0);
+    if (b) b.setAttribute("transform",`translate(${x} ${y}) rotate(${rot})`);
+    if (net && t>(sc.netAt||.8)) net.setAttribute("transform", sport==="Soccer" ? `translate(${6*Math.sin((t-.9)*30)} 0)` : `translate(0 ${Math.sin((t-.8)*20)*4})`);
+    if (t<1) requestAnimationFrame(step); else { ov.classList.add("show"); } };
+  requestAnimationFrame(step);
+  if (!reduceMotion) setTimeout(()=>petals(), dur*.85); else ov.classList.add("show");
+  if (store.get("sideline-cheer", true) && Narr.supported && !Narr.active) setTimeout(()=>Narr.say(AUSSIE_CHEER[sport]), dur*.8);
+  const close = () => { ov.style.transition="opacity .3s"; ov.style.opacity="0"; setTimeout(()=>ov.remove(),300); };
+  ov.onclick = close; setTimeout(close, dur + 2300);
+}
+// Reusable multiple-choice question block. key: localStorage key; onDone optional.
+function QuestionBlock(q, sport, key){
+  const saved = store.get(key, null);
+  return `<div class="qcard" data-key="${esc(key)}" data-sport="${esc(sport)}"><div class="tartan"></div>
+    <div class="sc" style="color:var(--rose);margin-top:6px">a question for you</div>
+    <div class="qq">${esc(q.q)}</div>
+    <div class="opts">${q.options.map((o,j)=>`<button class="opt ${saved!=null?(j===q.answer?'right':(j===saved?'wrong':'')):''}" data-j="${j}" ${saved!=null?'disabled':''}>${esc(o)}</button>`).join("")}</div>
+    <div class="after">${saved!=null?`<div class="explain"><b>${saved===q.answer?"Too right!":"Not quite."}</b> ${esc(q.explain)}</div>`:""}</div></div>`;
+}
+function wireQuestions(root, getQ){
+  root.querySelectorAll(".qcard").forEach(card=>{
+    const key=card.dataset.key, sport=card.dataset.sport, q=getQ(key); if(!q) return;
+    card.querySelectorAll(".opt").forEach(b=>b.onclick=()=>{
+      const j=+b.dataset.j, right=j===q.answer;
+      card.querySelectorAll(".opt").forEach(x=>{ x.disabled=true; if(+x.dataset.j===q.answer) x.classList.add("right"); });
+      if(!right){ b.classList.add("wrong"); card.classList.add("shake"); setTimeout(()=>card.classList.remove("shake"),450); }
+      card.querySelector(".after").innerHTML=`<div class="explain"><b>${right?"Too right!":"Not quite, good crack though."}</b> ${esc(q.explain)}</div>`;
+      store.set(key,j); if(right) celebrate(sport);
+    });
+  });
+}
+
+/* ================= data & state ================= */
+const TABS=[["today","Today"],["football","Football"],["basketball","Basketball"],["soccer","Soccer"],["baseball","Baseball"],["olympics","Olympics"],["quiz","Quiz"],["learn","Primer"]];
+const SPORT_TAB={football:"Football",basketball:"Basketball",soccer:"Soccer",baseball:"Baseball",olympics:"Olympics"};
+const SUBS={Football:[["nfl","NFL"],["cfb","College"]],Basketball:[["nba","NBA"],["cbb","College"]],Soccer:[["mls","MLS"],["nwsl","NWSL"],["europe","Europe"],["csoc","College"]],Baseball:[["mlb","MLB"]],Olympics:[["olympics","Olympics & Global"]]};
+const SPORTS=["Football","Basketball","Soccer","Baseball","Olympics"];
+let ED=null, STORY={}, LIST=[], RIDX=0;
+const prefs=()=>store.get("sideline-prefs",{name:"",sports:SPORTS.slice()});
+const current=()=>{ const h=location.hash.replace("#",""); return TABS.some(t=>t[0]===h)?h:"today"; };
+const todayISO=()=>{ const d=new Date(); return d.getFullYear()+"-"+String(d.getMonth()+1).padStart(2,"0")+"-"+String(d.getDate()).padStart(2,"0"); };
+const fmtDate=iso=>new Date(iso+"T12:00:00").toLocaleDateString("en-GB",{weekday:"long",day:"numeric",month:"long",year:"numeric"});
+const partOfDay=()=>{ const h=new Date().getHours(); return h<12?"morning":h<17?"afternoon":"evening"; };
+// Upgrade an older (v1) edition into the v2 shape so the page still renders.
+function normalise(e){
+  if (e.stories && e.sections) return e;
+  const stories=(e.lede||[]).map((s,i)=>({id:"s"+i,section:"",sport:s.sport,tag:s.tag,headline:s.headline,dek:"",body:[s.summary],backstory:[],glossary:[],people:[],question:null,why:s.why,dinner:s.dinner,articles:[]}));
+  const sections={}; Object.entries(e.leagues||{}).forEach(([k,L])=>{ sections[k]={...L,level:"",stories:[],profiles:(L.people||[]).map(p=>({name:p.name,team:p.team,blurb:p.blurb})),articles:[]}; });
+  return {...e, lede:stories.map(s=>s.id), stories, sections};
+}
+function findProfile(name){ for (const s of Object.values(ED.sections)) for (const p of (s.profiles||[])) if (p.name===name) return p; return null; }
+function sectionArticles(sec){ const seen=new Set(), out=[]; [...(sec.stories||[]).flatMap(id=>STORY[id]?.articles||[]), ...(sec.articles||[])].forEach(a=>{ if(a&&a.url&&!seen.has(a.url)){ seen.add(a.url); out.push(a);} }); return out; }
+
+function renderTabs(cur){
+  $("#tabs").innerHTML=TABS.map(([id,l])=>`<button data-t="${id}" class="${id===cur?'on':''}">${l}</button>`).join("");
+  $$("#tabs button").forEach(b=>b.onclick=()=>{ location.hash=b.dataset.t; });
+  const on=$("#tabs .on"); if(on) on.scrollIntoView({inline:"center",block:"nearest"});
+}
+
+/* ================= today ================= */
+function vToday(){
+  const e=ED, lede=e.lede.map(id=>STORY[id]).filter(Boolean);
+  let h=`<section class="cover" id="cover"><div class="track" id="track">`+lede.map((s,i)=>`<div class="slide" data-id="${s.id}">${art(s.sport,s.headline)}
+      <div class="counter sc">${i+1} / ${lede.length}</div>
+      <div class="copy"><div class="sc" style="color:var(--blush)">${esc(s.tag||s.sport)}</div><h2>${esc(s.headline)}</h2>${s.dek?`<p class="dek">${esc(s.dek)}</p>`:""}<span class="read sc">read the full story ${ICON.arrow}</span></div></div>`).join("")+
+    `</div><button class="arrow l" id="cv-l" aria-label="Previous">${ICON.left}</button><button class="arrow r" id="cv-r" aria-label="Next">${ICON.right}</button><div class="dots" id="dots">${lede.map((_,i)=>`<i class="${i?'':'on'}"></i>`).join("")}</div></section>`;
+  if (e.date!==todayISO()) h+=`<p class="sc muted" style="text-align:center;margin-top:16px">edition of ${esc(fmtDate(e.date))} · a fresh one arrives each morning</p>`;
+  h+=`<p class="issue-note fade">${esc(e.issue_note)}</p><div class="cta-row" id="cta"><button class="btn" id="go-brief">${ICON.play} read me the briefing</button><button class="btn ghost" id="go-tour">${ICON.speak} show me around</button></div>`;
+  h+=head("in this issue","The <em>stories</em>")+`<div class="grid" id="grid">`+lede.map((s,i)=>`<div class="tile ${i===0?'wide':''}" data-id="${s.id}"><div class="frame">${art(s.sport,s.headline+"tile",{shade:false})}</div><span class="sc">${esc(s.tag||s.sport)}</span><h4>${esc(s.headline)}</h4>${i===0&&s.dek?`<div class="dek">${esc(s.dek)}</div>`:""}</div>`).join("")+`</div>`;
+  if (e.fact_of_the_day) h+=`<div class="fact" id="fact"><div class="sc" style="color:var(--rose)">fact of the day · ${esc(e.fact_of_the_day.sport)}</div><p>“${esc(e.fact_of_the_day.text)}”</p></div>`;
+  h+=head("the days ahead","Worth <em>watching</em>")+`<ul class="lst" id="watch">`+(e.upcoming||[]).map(u=>`<li><div class="when sc">${esc(u.when)}</div><div><div class="line">${esc(u.matchup)}</div><div class="sub">${esc(u.note)}</div></div></li>`).join("")+`</ul>`;
+  const arts=lede.map(s=>(s.articles||[])[0]&&{a:s.articles[0],sp:s.sport}).filter(Boolean).slice(0,6);
+  if (arts.length) h+=head("from the newsstands","Further <em>reading</em>")+`<div class="cards">`+arts.map(x=>ArticleCard(x.a,x.sp)).join("")+`</div>`;
+  const q=quizState();
+  h+=head("six questions a day","The <em>quiz</em>")+`<div class="grid" id="sh-quiz"><div class="tile wide" onclick="location.hash='quiz'"><div class="frame">${art("Olympics","quizcover"+ED.date,{shade:false,palette:0})}</div><span class="sc">${q.done?`you scored ${q.score} of ${ED.quiz.length}`:"today's quiz is ready"}</span><h4>${q.done?"Review today's answers":"Test what you've just read"} →</h4>${streakLine()}</div></div>`;
+  return h;
+}
+function wireToday(){
+  const track=$("#track"), n=ED.lede.length, idx=()=>Math.round(track.scrollLeft/track.clientWidth), go=d=>track.scrollTo({left:Math.max(0,Math.min(n-1,idx()+d))*track.clientWidth});
+  $("#cv-l").onclick=e=>{e.stopPropagation();go(-1);}; $("#cv-r").onclick=e=>{e.stopPropagation();go(1);};
+  track.addEventListener("scroll",()=>{ const i=idx(); $$("#dots i").forEach((d,j)=>d.classList.toggle("on",j===i)); },{passive:true});
+  $$(".slide").forEach(s=>s.onclick=()=>openStory(s.dataset.id, ED.lede));
+  $$("#grid .tile[data-id]").forEach(t=>t.onclick=()=>openStory(t.dataset.id, ED.lede));
+  $("#go-brief").onclick=briefing; $("#go-tour").onclick=tour;
+}
+
+/* ================= story reader (deep dive) ================= */
+function storyText(s){ return [s.headline+".", s.dek||"", ...(s.body||[]), s.backstory&&s.backstory.length?"Bit of backstory. "+s.backstory.join(" "):"", s.why?"Why it matters. "+s.why:"", s.dinner?"And if you want something to say at dinner, try this one: "+s.dinner.replace(/[“”"]/g,""):""].join(" "); }
+function openStory(id, list, {fromBriefing=false}={}){
+  const s=STORY[id]; if(!s) return; LIST=list||[id]; RIDX=Math.max(0,LIST.indexOf(id)); const n=LIST.length, r=$("#reader");
+  const people=(s.people||[]).map(findProfile).filter(Boolean);
+  r.innerHTML=`<div class="progress"><i id="rprog"></i></div>
+    <div class="rhero">${art(s.sport,s.headline)}<div class="rtop"><button class="icon-btn" id="r-close" aria-label="Close">${ICON.close}</button><span class="sc">${RIDX+1} / ${n}</span></div>
+      <div class="rcopy"><div class="sc" style="color:var(--blush)">${esc(s.tag||s.sport)}</div><h2>${esc(s.headline)}</h2></div></div>
+    <div class="body">
+      ${s.dek?`<p class="dek">${esc(s.dek)}</p>`:""}
+      ${(s.body||[]).map(p=>`<p class="par">${esc(p)}</p>`).join("")}
+      ${s.backstory&&s.backstory.length?`<div class="box"><div class="stripe tartan"></div><div class="head sc"><svg width="22" height="22"><use href="#rose"/></svg>the backstory</div>${s.backstory.map(p=>`<p>${esc(p)}</p>`).join("")}</div>`:""}
+      ${s.glossary&&s.glossary.length?`<div class="sc" style="color:var(--rose);margin:26px 0 10px">words to know · tap one</div><div class="terms">${s.glossary.map((g,i)=>`<button class="term" data-i="${i}">${esc(g.t)}</button>`).join("")}</div><div class="termdef" id="termdef"></div>`:""}
+      ${s.question?QuestionBlock(s.question,s.sport,"sideline-sq-"+ED.date+"-"+s.id):""}
+      ${s.why?`<div class="why"><div class="sc muted">why it matters</div><p>${esc(s.why)}</p></div>`:""}
+      ${s.dinner?`<div class="dinner"><div class="sc" style="color:var(--oxblood)">say this at dinner</div><p>${esc(s.dinner)}</p></div>`:""}
+      ${people.length?`<div class="sc" style="color:var(--rose);margin:30px 0 12px">people in this story</div><div class="profiles" style="padding:0">${people.map(AthleteProfile).join("")}</div>`:""}
+      ${s.articles&&s.articles.length?`<div class="sc" style="color:var(--rose);margin:30px 0 12px">further reading</div><div class="cards" style="padding:0">${s.articles.map(a=>ArticleCard(a,s.sport)).join("")}</div><p class="muted" style="font-size:13px;font-style:italic;margin-top:10px">Headlines link to the original publishers. Their photographs belong to them, so we show our own house design in their place.</p>`:""}
+    </div>
+    <div class="rnav"><button class="icon-btn" id="r-prev" aria-label="Previous story" ${RIDX===0?'style="opacity:.25"':''}>${ICON.left}</button>
+      <button class="btn" id="r-listen">${ICON.speak} listen</button>
+      <button class="icon-btn" id="r-next" aria-label="Next story" ${RIDX===n-1?'style="opacity:.25"':''}>${ICON.right}</button></div>`;
+  r.classList.add("open"); r.setAttribute("aria-hidden","false"); r.scrollTop=0; document.body.style.overflow="hidden";
+  $("#r-close").onclick=closeReader;
+  $("#r-prev").onclick=()=>{ if(RIDX>0){ if(!fromBriefing) Narr.stop(); openStory(LIST[RIDX-1],LIST); } };
+  $("#r-next").onclick=()=>{ if(RIDX<n-1){ if(!fromBriefing) Narr.stop(); openStory(LIST[RIDX+1],LIST); } };
+  $("#r-listen").onclick=()=>Narr.play([{title:s.headline,text:storyText(s)}],{kicker:"reading the story"});
+  r.querySelectorAll(".term").forEach(b=>b.onclick=()=>{ r.querySelectorAll(".term").forEach(x=>x.classList.toggle("on",x===b)); const g=s.glossary[+b.dataset.i]; $("#termdef").innerHTML=`<b>${esc(g.t)}:</b> ${esc(g.d)}`; });
+  wireQuestions(r, ()=>s.question);
+  r.onscroll=()=>{ const p=r.scrollTop/Math.max(1,r.scrollHeight-r.clientHeight); $("#rprog").style.width=(p*100)+"%"; };
+}
+function closeReader(){ const r=$("#reader"); r.classList.remove("open"); r.setAttribute("aria-hidden","true"); document.body.style.overflow=""; }
+(function(){ let x0=null,y0=null; const r=$("#reader");
+  r.addEventListener("touchstart",e=>{x0=e.touches[0].clientX;y0=e.touches[0].clientY;},{passive:true});
+  r.addEventListener("touchend",e=>{ if(x0==null) return; const dx=e.changedTouches[0].clientX-x0, dy=e.changedTouches[0].clientY-y0; x0=null;
+    if(Math.abs(dx)>70&&Math.abs(dx)>Math.abs(dy)*1.5){ if(dx<0&&RIDX<LIST.length-1) openStory(LIST[RIDX+1],LIST); if(dx>0&&RIDX>0) openStory(LIST[RIDX-1],LIST); } },{passive:true});
+  document.addEventListener("keydown",e=>{ if(!r.classList.contains("open")) return; if(e.key==="ArrowRight"&&RIDX<LIST.length-1) openStory(LIST[RIDX+1],LIST); if(e.key==="ArrowLeft"&&RIDX>0) openStory(LIST[RIDX-1],LIST); if(e.key==="Escape") closeReader(); });
+})();
+
+/* ================= briefing & tour ================= */
+function myStories(){ const s=prefs().sports; const all=ED.lede.map(id=>STORY[id]).filter(Boolean); const mine=all.filter(x=>s.includes(x.sport)); return mine.length?mine:all; }
+function briefing(){
+  const p=prefs(), mine=myStories(), name=p.name?`, ${p.name}`:"", ids=mine.map(s=>s.id);
+  const items=[{title:"Good "+partOfDay(),text:`G'day${name}. Here's your Sideline briefing for ${fmtDate(ED.date)}. ${ED.issue_note} I've got ${mine.length} ${mine.length===1?"story":"stories"} lined up for you, and I'll flip the pages as we go. Pause me or skip ahead whenever you like, the buttons are down the bottom.`}];
+  mine.forEach((s,k)=>items.push({title:s.headline,text:(k?"Next. ":"First. ")+storyText(s)+(s.question?" There's a question waiting at the end of this one, have a crack when you're ready.":""),onStart:()=>openStory(s.id,ids,{fromBriefing:true})}));
+  if (ED.fact_of_the_day) items.push({title:"Fact of the day",text:`And to finish, your fact of the day. ${ED.fact_of_the_day.text} That's the lot. The quiz is ready when you are, and reckon you'll smash it.`,onStart:closeReader});
+  Narr.play(items,{kicker:"your briefing"});
+}
+function spotlight(sel){ $$(".spot").forEach(e=>e.classList.remove("spot")); const el=$(sel); if(!el) return; el.classList.add("spot"); el.scrollIntoView({behavior:"smooth",block:"center"}); }
+function tour(){
+  closeReader(); if(current()!=="today"){ location.hash="today"; setTimeout(tour,450); return; }
+  const p=prefs(), name=p.name?`, ${p.name}`:"";
+  Narr.play([
+    {title:"Welcome",text:`Welcome to The Sideline${name}. Come on in, I'll give you the grand tour. Won't take a sec.`,onStart:()=>window.scrollTo({top:0,behavior:"smooth"})},
+    {title:"The cover",text:"Up the top is the cover. Give it a swipe, or use the arrows, to flick through today's big stories. Tap any one and it opens right up, with the backstory, the lingo, the people involved, and a question for you at the end.",onStart:()=>spotlight("#cover")},
+    {title:"The sections",text:"Along the top there's a page for each sport, football, basketball, soccer and baseball, plus one for the Olympics. Each one's got the pros and the college game, so soccer, for example, has MLS, the women's NWSL, Europe and college.",onStart:()=>{window.scrollTo({top:0,behavior:"smooth"});spotlight("#tabs");}},
+    {title:"The briefing",text:"These two buttons are how you get me. Hit read me the briefing, and I'll read out the stories you're into, flipping the pages as I go.",onStart:()=>spotlight("#cta")},
+    {title:"In this issue",text:"Further down, every story's laid out like a magazine. Get a story's question right and you'll get a little celebration. Not gonna spoil it.",onStart:()=>spotlight("#grid")},
+    {title:"Worth watching",text:"Then the games worth catching over the next few days, times in Eastern.",onStart:()=>spotlight("#watch")},
+    {title:"The quiz",text:"And down the bottom, the daily quiz, six fresh questions every morning, with a streak to keep going. If anything's got you stumped, the Primer covers how each sport works. That's the tour. Enjoy!",onStart:()=>spotlight("#sh-quiz")}
+  ],{kicker:"a short tour"});
+}
+
+/* ================= sport pages ================= */
+function vSport(tab){
+  const sport=SPORT_TAB[tab], subs=SUBS[sport], key=store.get("sideline-sub-"+sport, subs[0][0]), secKey=subs.some(s=>s[0]===key)?key:subs[0][0], L=ED.sections[secKey];
+  const label=subs.find(s=>s[0]===secKey)[1];
+  let h=`<section class="hero">${art(sport,secKey+ED.date,{word:label})}<div class="copy"><div class="sc" style="color:var(--blush)">${esc(L?L.season_note:"")}</div><h2>${esc(sport)}<i>${esc(label)}</i></h2></div></section>`;
+  if (subs.length>1) h+=`<div class="subswitch sc">${subs.map(([k,l])=>`<button data-k="${k}" class="${k===secKey?'on':''}">${l}</button>`).join("")}</div>`;
+  if (!L) return h+`<p class="muted" style="text-align:center;margin-top:30px">No report today.</p>`;
+  h+=`<div class="article"><div class="sc" style="color:var(--rose);margin-top:30px">the state of play · ${esc(L.name)}</div><p class="lede-p">${esc(L.state_of_play)}</p><button class="btn ghost" id="lg-listen">${ICON.speak} listen</button></div>`;
+  const stories=(L.stories||[]).map(id=>STORY[id]).filter(Boolean);
+  if (stories.length) h+=head("in depth","The <em>stories</em>")+`<div class="grid" id="sgrid">`+stories.map((s,i)=>`<div class="tile ${stories.length===1||i===0?'wide':''}" data-id="${s.id}"><div class="frame">${art(s.sport,s.headline+"tile",{shade:false})}</div><span class="sc">${esc(s.tag||s.sport)}</span><h4>${esc(s.headline)}</h4>${s.dek?`<div class="dek">${esc(s.dek)}</div>`:""}</div>`).join("")+`</div>`;
+  if (L.standings&&L.standings.length){ h+=head("the table","Who's <em>on top</em>")+(L.standings_note?`<p class="muted" style="text-align:center;max-width:560px;margin:-8px auto 6px;font-size:15px;padding:0 18px">${esc(L.standings_note)}</p>`:"")+`<div class="two">`+L.standings.map(g=>`<table class="st"><caption class="sc">${esc(g.group)}</caption>`+g.rows.map((r,i)=>`<tr><td class="i">${i+1}</td><td>${esc(r[0])}</td><td class="n">${esc(r[2]||"")}</td><td class="r">${esc(r[1])}</td></tr>`).join("")+`</table>`).join("")+`</div>`; }
+  const lst=(k,t,items)=>items&&items.length?head(k,t)+`<ul class="lst">`+items.map(x=>`<li><div class="when sc">${esc(x.when)}</div><div><div class="line">${esc(x.line)}</div>${x.note?`<div class="sub">${esc(x.note)}</div>`:""}</div></li>`).join("")+`</ul>`:"";
+  h+=lst("the scoreboard","Recent <em>results</em>",L.results); h+=lst("the fixtures","Next <em>up</em>",L.upcoming);
+  if (L.injuries&&L.injuries.length) h+=head("the infirmary","Injuries <em>to know</em>")+`<div class="pad" style="max-width:720px;margin:0 auto">`+L.injuries.map(x=>`<div class="inj"><div class="top"><div><div class="who">${esc(x.player)}</div><div class="sc muted">${esc(x.team)}</div></div><div class="st sc ${/return|back|probable|cleared/i.test(x.status)?'ok':''}">${esc(x.status)}</div></div><p class="muted" style="margin:6px 0 0">${esc(x.detail)}</p></div>`).join("")+`</div>`;
+  if (L.profiles&&L.profiles.length) h+=head("dramatis personae","Characters <em>to know</em>")+`<div class="profiles">`+L.profiles.map(AthleteProfile).join("")+`</div>`;
+  const arts=sectionArticles(L); if (arts.length) h+=head("from the newsstands","Further <em>reading</em>")+`<div class="cards">`+arts.map(a=>ArticleCard(a,sport)).join("")+`</div>`;
+  return h;
+}
+function wireSport(tab){
+  const sport=SPORT_TAB[tab];
+  $$(".subswitch button").forEach(b=>b.onclick=()=>{ store.set("sideline-sub-"+sport,b.dataset.k); render(); });
+  const subs=SUBS[sport], key=store.get("sideline-sub-"+sport,subs[0][0]), secKey=subs.some(s=>s[0]===key)?key:subs[0][0], L=ED.sections[secKey]; if(!L) return;
+  const ids=(L.stories||[]).filter(id=>STORY[id]);
+  $$("#sgrid .tile").forEach(t=>t.onclick=()=>openStory(t.dataset.id,ids));
+  const b=$("#lg-listen"); if(b) b.onclick=()=>Narr.play([{title:L.name,text:`The state of play in ${L.name}. ${L.state_of_play}`+(L.injuries&&L.injuries.length?" On the injury front. "+L.injuries.map(x=>`${x.player}: ${x.status}. ${x.detail}`).join(" "):"")}],{kicker:L.name});
+}
+
+/* ================= quiz ================= */
+const quizKey=()=>"sideline-quiz-"+ED.date;
+function quizState(){ return store.get(quizKey(),{i:0,answers:[],done:false,score:0}); }
+function streakLine(){ const s=store.get("sideline-streak",{n:0}); return s.n>0?`<div class="sc" style="color:var(--brass);margin-top:6px">${s.n}-day streak</div>`:""; }
+function bumpStreak(){ const s=store.get("sideline-streak",{n:0,last:null}); if(s.last===ED.date) return; const y=new Date(ED.date+"T12:00:00"); y.setDate(y.getDate()-1); const yI=y.getFullYear()+"-"+String(y.getMonth()+1).padStart(2,"0")+"-"+String(y.getDate()).padStart(2,"0"); s.n=s.last===yI?s.n+1:1; s.last=ED.date; store.set("sideline-streak",s); }
+function vQuiz(){
+  const Q=ED.quiz, st=quizState();
+  let h=`<section class="hero" style="height:34vh;min-height:240px">${art("Olympics","quizhero"+ED.date,{palette:0})}<div class="copy"><div class="sc" style="color:var(--blush)">${esc(fmtDate(ED.date))}</div><h2 style="font-size:clamp(46px,12vw,84px)">The Quiz</h2></div></section><div class="quiz">`;
+  if (st.done){
+    const msg=st.score===Q.length?"A perfect score. You absolute legend.":st.score>=Q.length*.6?"Ripper effort. Well played.":"You know heaps more than you did this morning.";
+    h+=`<div class="score"><div class="sc muted">today's result</div><div class="big">${st.score}<span style="font-size:40px" class="muted">/${Q.length}</span></div><p style="font-family:var(--display);font-style:italic;font-size:24px;color:var(--racing)">${msg}</p>${streakLine()}</div>`+
+      Q.map((q,i)=>`<div class="review"><div class="sc" style="color:var(--rose)">${esc(q.sport)} · ${st.answers[i]===q.answer?"correct":"missed"}</div><p style="font-family:var(--display);font-weight:600;font-size:21px;margin:4px 0">${esc(q.q)}</p><p style="margin:0"><b>${esc(q.options[q.answer])}</b></p><p class="muted" style="margin:4px 0 0">${esc(q.explain)}</p></div>`).join("")+
+      `<div style="text-align:center;margin-top:20px"><button class="btn ghost" id="q-reset">retake</button></div>`;
+  } else {
+    const q=Q[st.i];
+    h+=`<div class="qbar"><i style="width:${st.i/Q.length*100}%"></i></div><div class="qmeta sc"><span>${esc(q.sport)}</span><span>${st.i+1} of ${Q.length}</span></div>
+      <div class="qq" style="margin-top:20px">${esc(q.q)}</div><div id="opts">${q.options.map((o,j)=>`<button class="opt" data-j="${j}">${esc(o)}</button>`).join("")}</div><div id="after"></div>
+      <div style="text-align:center;margin-top:18px"><button class="btn ghost" id="q-read">${ICON.speak} read the question</button></div>`;
+  }
+  return h+`</div>`;
+}
+function wireQuiz(){
+  const r=$("#q-reset"); if(r) r.onclick=()=>{ store.set(quizKey(),{i:0,answers:[],done:false,score:0,retake:true}); render(); };
+  const opts=$$("#opts .opt"); if(!opts.length) return; const st=quizState(), q=ED.quiz[st.i];
+  $("#q-read").onclick=()=>Narr.play([{title:"Question "+(st.i+1),text:q.q+" "+q.options.map((o,j)=>["A","B","C","D"][j]+": "+o+".").join(" ")}],{kicker:"the quiz"});
+  opts.forEach(b=>b.onclick=()=>{
+    const j=+b.dataset.j, right=j===q.answer; opts.forEach(x=>{x.disabled=true; if(+x.dataset.j===q.answer) x.classList.add("right");});
+    if(!right){ b.classList.add("wrong"); } else celebrate(q.sport);
+    st.answers[st.i]=j; if(right) st.score++; const last=st.i===ED.quiz.length-1;
+    $("#after").innerHTML=`<div class="explain"><b>${right?"Too right!":"Not quite, good crack though."}</b> ${esc(q.explain)}</div><div style="text-align:center"><button class="btn" id="q-next" style="margin-top:18px">${last?"see my score":"next question"} ${ICON.arrow}</button></div>`;
+    $("#q-next").onclick=()=>{ Narr.stop(); if(last){ st.done=true; if(!st.retake) bumpStreak(); } else st.i++; store.set(quizKey(),st); render(); window.scrollTo(0,0); };
+  });
+}
+
+/* ================= ask ================= */
+let sampleFn=null, askCtl=null;
+function vAsk(){
+  return `<section class="hero" style="height:34vh;min-height:240px">${art("Soccer","askhero",{palette:2,variant:1})}<div class="copy"><div class="sc" style="color:var(--blush)">your personal explainer</div><h2 style="font-size:clamp(46px,12vw,84px)">Ask</h2></div></section>
+  <div class="article"><p class="muted" style="margin-top:24px">Ask anything: "what's offside?", "why is Notre Dame such a big deal?", or "tell me the Nashville story as if it were a novel."</p>
+  <div id="ask-unavail" class="muted hidden" style="padding:14px;border:1px solid var(--rule)">Ask needs you to be signed in to Claude when opening this page.</div>
+  <div id="ask-box"><textarea class="ask" id="ask-q" placeholder="Your question…"></textarea>
+  <div class="pills">${["What is offside?","Who should I root for this weekend?","Explain the College Football Playoff","Why is LeBron such a big deal?","Recommend a lovely sports book"].map(c=>`<button class="pill chipq">${esc(c)}</button>`).join("")}</div>
+  <button class="btn" id="ask-go">ask ${ICON.arrow}</button> <button class="btn ghost hidden" id="ask-listen">${ICON.speak} listen</button><div class="answer" id="ask-a"></div></div></div>`;
+}
+async function wireAsk(){
+  $$(".chipq").forEach(c=>c.onclick=()=>{ $("#ask-q").value=c.textContent; ask(); }); $("#ask-go").onclick=ask;
+  $("#ask-listen").onclick=()=>Narr.play([{title:"Your answer",text:$("#ask-a").textContent}],{kicker:"ask"});
+  if(!window.claude||!window.claude.use){ unavail(); return; } try{ sampleFn=await claude.use("sample"); }catch(e){ sampleFn=null; } if(!sampleFn&&current()==="ask") unavail();
+}
+function unavail(){ const u=$("#ask-unavail"); if(u) u.classList.remove("hidden"); const b=$("#ask-box"); if(b) b.classList.add("hidden"); }
+async function ask(){
+  const q=$("#ask-q").value.trim(); if(!q) return; const out=$("#ask-a"); if(!sampleFn){ out.textContent="Ask isn't available here just now."; return; }
+  if(askCtl) askCtl.abort(); askCtl=new AbortController(); out.innerHTML=`<span class="muted"><i>Having a think…</i></span>`; $("#ask-listen").classList.add("hidden");
+  const ctx=JSON.stringify({date:ED.date,stories:ED.stories.map(s=>({headline:s.headline,sport:s.sport,body:s.body,backstory:s.backstory})),sections:Object.fromEntries(Object.entries(ED.sections).map(([k,v])=>[k,{name:v.name,state_of_play:v.state_of_play,standings:v.standings,upcoming:v.upcoming}]))});
+  const prompt=`You are the urbane, warm British editor of "The Sideline", a sporting gazette for a very intelligent reader who loves books and is newer to sports. Explain clearly; never condescend; define jargon the first time; literary comparisons welcome when they genuinely help. Under 200 words, plain prose with short paragraphs and no markdown. For anything current, rely ONLY on today's edition below; if it isn't covered, say so rather than guessing. Don't encourage gambling.\n\nTODAY'S EDITION (JSON):\n${ctx}\n\nREADER'S QUESTION: ${q}`;
+  try{ const r=await sampleFn(prompt,{signal:askCtl.signal,modelTier:"default",onText:({text})=>{out.textContent=text;}}); out.textContent=r.text; $("#ask-listen").classList.remove("hidden"); }
+  catch(err){ if(err&&err.code==="not_granted"){unavail();return;} if(err&&err.name==="AbortError") return; out.textContent=err&&err.code==="rate_limited"?"Rather a lot of questions today. Do try again in a minute.":"Something went awry. Do try again."; }
+}
+
+/* ================= primer ================= */
+const PRIMERS=[
+ ["Football","Two teams of 11 try to carry or throw an oval ball into the other's end zone for a touchdown, worth 6 points plus a 1-point kick. The offence gets four tries, called 'downs', to gain 10 yards. Make it and the count resets; fail and the ball goes to the other side, which is why teams usually punt it away on fourth down. The quarterback is the protagonist, handling the ball on almost every play. The NFL has 32 teams and a 17-game season ending in February's Super Bowl."],
+ ["College sport","American universities field teams that draw enormous crowds, sometimes over 100,000 for a football game. Players are students, though they can now earn money from endorsements. Teams belong to conferences, regional leagues such as the SEC or Big Ten, and championships are decided by playoffs or tournaments: a 12-team playoff in football, and 'March Madness' in basketball."],
+ ["Basketball","Five players a side and a hoop ten feet up. Baskets are worth 2 points, 3 from behind the arc, and free throws 1. A 24-second shot clock keeps scoring constant. With only five on court, one great player changes everything, which is why the NBA is so star-driven. 82 games from October to April, then best-of-seven playoff series to the June Finals."],
+ ["Soccer","Eleven a side, and only the goalkeepers may use their hands. Two 45-minute halves with a running clock. Goals are rare, so 1–0 is perfectly respectable. In a league a win is 3 points and a draw 1. In Europe the most points wins the title and the bottom three are relegated. American leagues, MLS and the women's NWSL, use playoffs instead."],
+ ["Baseball","A pitcher throws, a batter tries to hit, and a slow-building drama runs nine innings. Each side bats until it makes three outs. Three strikes and you're out; four bad pitches ('balls') and you walk to first base. Go round all four bases and you score a run. It's the most literary of sports: 162 games, endless statistics, and a century of poems and novels."],
+ ["The Olympics","Every four years, summer and winter alternating two years apart. Countries send athletes in dozens of sports, and medals are gold, silver and bronze. The next Summer Games are in Los Angeles in July 2028, with flag football and squash making their debuts, followed by the Paralympics for athletes with disabilities."]];
+const GLOSSARY={Football:[["First down","Gaining 10 yards within four tries. It resets the count."],["Red zone","Inside the opponent's 20-yard line."],["Sack","Tackling the quarterback before he can throw."],["Hail Mary","A long, desperate pass into the end zone, usually at the end of a half."],["Field goal","A kick through the uprights. 3 points."],["Wild card","A playoff spot for a good team that didn't win its division."]],
+ Basketball:[["Triple-double","10 or more in three categories in a game."],["Rebound","Grabbing the ball after a missed shot."],["Swish","A shot that goes in without touching the rim."],["Play-in","A mini-tournament for seeds 7–10."],["March Madness","The college tournament each spring."]],
+ Soccer:[["Offside","An attacker can't be behind the last defender when the ball is passed to them."],["Clean sheet","Conceding no goals."],["Hat trick","Three goals by one player."],["Relegation","Dropping down a division."],["Supporters' Shield","MLS trophy for the best regular season."],["Champions League","Europe's elite club tournament."]],
+ Baseball:[["ERA","Runs a pitcher allows per nine innings. Lower is better."],["Home run","Hitting the ball over the outfield wall to score."],["Walk-off","A hit that wins the game in its final inning."],["Cy Young","The award for the best pitcher."],["Hot stove","Offseason trade and signing chatter."]],
+ Olympics:[["Paralympics","Games for athletes with disabilities, held after the Olympics."],["IOC","The International Olympic Committee."],["Podium","The top three finishers."]]};
+function vLearn(){
+  return `<section class="hero" style="height:34vh;min-height:240px">${art("Football","primerhero",{palette:1,variant:0})}<div class="copy"><div class="sc" style="color:var(--blush)">start here</div><h2 style="font-size:clamp(46px,12vw,84px)">Primer</h2></div></section>
+  <div class="article" style="margin-top:16px">${PRIMERS.map(([t,b])=>`<details><summary>${t}, in two minutes</summary><p>${esc(b)}</p><button class="btn ghost listen-p" data-t="${esc(t)}" style="margin-bottom:18px">${ICON.speak} listen</button></details>`).join("")}
+  ${head("reference","The <em>glossary</em>")}<input class="search" id="gl-s" placeholder="Search terms…"><div id="gl">${glHTML("")}</div></div>`;
+}
+function glHTML(f){ f=f.toLowerCase(); return Object.entries(GLOSSARY).map(([sp,t])=>{ t=t.filter(([a,b])=>!f||(a+b).toLowerCase().includes(f)); return t.length?`<div class="sc" style="color:var(--rose);margin-top:24px">${sp}</div><dl class="gl">`+t.map(([a,b])=>`<dt>${esc(a)}</dt><dd>${esc(b)}</dd>`).join("")+`</dl>`:""; }).join("")||`<p class="muted">Nothing found. Try the Ask page.</p>`; }
+
+/* ================= onboarding & settings ================= */
+function openModal(h){ $("#sheet").innerHTML=`<div class="tartan"></div>`+h; $("#modal").classList.remove("hidden"); }
+function closeModal(){ $("#modal").classList.add("hidden"); }
+$("#modal").onclick=e=>{ if(e.target.id==="modal") closeModal(); };
+const sportPills=sel=>`<div class="pills" id="sp-pills">${SPORTS.map(s=>`<button class="pill ${sel.includes(s)?'on':''}" data-s="${s}">${s}</button>`).join("")}</div>`;
+const wirePills=()=>$$("#sp-pills .pill").forEach(c=>c.onclick=()=>c.classList.toggle("on"));
+const readPills=()=>{ const s=$$("#sp-pills .pill.on").map(c=>c.dataset.s); return s.length?s:SPORTS.slice(); };
+function onboarding(){
+  const p=prefs();
+  openModal(`<div class="sc" style="color:var(--rose)">welcome</div><h3>The Sideline</h3><p class="muted">A daily sporting gazette, edited for the well-read. Two quick questions and you're in.</p>
+    <div class="field"><span class="sc">what shall we call you?</span><input type="text" id="ob-name" value="${esc(p.name)}" placeholder="Your first name"></div>
+    <div class="field"><span class="sc">what interests you? choose any</span>${sportPills(p.sports)}</div>
+    <div class="row"><button class="btn" id="ob-go">${ICON.speak} meet your narrator</button><button class="btn ghost" id="ob-skip">just read</button></div>`);
+  wirePills(); const save=()=>{ store.set("sideline-prefs",{name:$("#ob-name").value.trim(),sports:readPills()}); store.set("sideline-onboarded",true); closeModal(); };
+  $("#ob-go").onclick=()=>{ save(); greet(); }; $("#ob-skip").onclick=save;
+}
+function greet(){
+  const p=prefs(), name=p.name?`, ${p.name}`:"", mine=myStories();
+  Narr.play([{title:"Good "+partOfDay(),text:`G'day${name}, lovely to meet you. I'm your narrator, and I'll be looking after you round here. Today's got ${mine.length} ${mine.length===1?"story":"stories"} picked out just for you. Tap the little speaker up the top whenever you want me. I can read you the briefing, or show you around the place.`,onStart:()=>window.scrollTo({top:0,behavior:"smooth"})}],{kicker:"your narrator",onDone:voiceMenu});
+}
+function voiceMenu(){
+  openModal(`<div class="sc" style="color:var(--rose)">your narrator</div><h3>How may I help?</h3><div class="row" style="flex-direction:column;align-items:stretch">
+    <button class="btn" id="vm-brief">${ICON.play} read me the briefing</button><button class="btn ghost" id="vm-tour">show me around</button><button class="btn ghost" id="vm-page">read this page</button><button class="btn ghost" id="vm-close">not just now</button></div>`);
+  $("#vm-brief").onclick=()=>{ closeModal(); if(current()!=="today") location.hash="today"; setTimeout(briefing,250); };
+  $("#vm-tour").onclick=()=>{ closeModal(); tour(); }; $("#vm-page").onclick=()=>{ closeModal(); readPage(); }; $("#vm-close").onclick=closeModal;
+}
+function readPage(){
+  const c=current(); if($("#reader").classList.contains("open")) return $("#r-listen").click();
+  if(c==="today") return briefing(); if(SPORT_TAB[c]) return $("#lg-listen")&&$("#lg-listen").click();
+  if(c==="quiz"&&$("#q-read")) return $("#q-read").click();
+  if(c==="learn") return Narr.play(PRIMERS.map(([t,b])=>({title:t,text:t+". "+b})),{kicker:"the primer"});
+  Narr.play([{title:"Ask",text:"This is the Ask page. Chuck in any question about sport, and I'll explain it in plain English."}]);
+}
+function voiceStatus(){
+  const v=Narr.voice(), au=Narr.voices.some(x=>/en[-_]AU/i.test(x.lang)&&!Narr.FEMALE.test(x.name));
+  return `<div style="background:var(--blush);padding:12px 14px;margin:6px 0 10px;font-size:15px"><b>Speaking now:</b> ${v?esc(v.name)+" ("+esc(v.lang)+")":"no voice found"}${au?"":`<br><b>No Australian male voice is installed on this phone</b>, so it's falling back to the closest one. Install one with the steps below and he'll switch automatically.`}</div>`;
+}
+function studioHTML(){
+  const men=Narr.britishMen(), cur=Narr.voice(), others=Narr.voices.filter(v=>!men.includes(v)&&!Narr.FEMALE.test(v.name)).slice(0,6);
+  const row=v=>`<button class="pill studio-v ${cur&&v.name===cur.name?'on':''}" data-v="${esc(v.name)}" style="display:flex;justify-content:space-between;width:100%;margin:6px 0;border-radius:4px;text-align:left"><span>${esc(v.name)}${Narr.quality(v)>=2?' ★':''}</span><span class="muted" style="font-size:13px">${esc(v.lang)} ▸</span></button>`;
+  if(!men.length) return `<p class="muted">No male English voices are installed on this device yet. Follow the steps below to download one.</p>`+others.map(row).join("");
+  return men.map(row).join("")+(others.length?`<details style="border:0"><summary style="font-size:17px">other voices</summary>${others.map(row).join("")}</details>`:"");
+}
+function wireStudio(){ $$(".studio-v").forEach(b=>b.onclick=()=>{ store.set("sideline-voice-au",b.dataset.v); if($("#st-pitch")) store.set("sideline-pitch",+$("#st-pitch").value); if($("#st-rate")) store.set("sideline-rate",+$("#st-rate").value); $$(".studio-v").forEach(x=>x.classList.toggle("on",x===b)); const n=prefs().name; Narr.say(`G'day${n?", "+n:""}. Want me to read you the paper?`); }); }
+function settings(){
+  const p=prefs(), cur=Narr.voice(), vs=Narr.voices.slice().sort((a,b)=>(/GB/.test(b.lang)-/GB/.test(a.lang)));
+  openModal(`<div class="sc" style="color:var(--rose)">preferences</div><h3>Settings</h3>
+    <div class="field"><span class="sc">your name</span><input type="text" id="st-name" value="${esc(p.name)}"></div>
+    <div class="field"><span class="sc">your sports, for the briefing</span>${sportPills(p.sports)}</div>
+    ${Narr.supported?`<div class="field"><span class="sc">choose your narrator · every male voice on this device · tap to hear him</span><div id="studio">${voiceStatus()}${studioHTML()}</div>
+      <p class="muted" style="font-size:14px;margin:10px 0 0">For a far richer, deeper voice on an iPhone: Settings → Accessibility → Spoken Content → Voices → English → Australia, then download <b>Lee (Enhanced)</b> or <b>Gordon</b>. Return here and choose him. On a Mac it's the same under System Settings → Accessibility → Spoken Content.</p></div>
+    <div class="field"><span class="sc">depth of voice</span><input type="range" id="st-pitch" min="0.6" max="1.1" step="0.01" value="${store.get("sideline-pitch",.8)}"></div>
+    <div class="field"><span class="sc">speaking pace</span><input type="range" id="st-rate" min="0.75" max="1.15" step="0.01" value="${store.get("sideline-rate",.9)}"></div>
+    <div class="field"><label style="display:flex;gap:10px;align-items:center"><input type="checkbox" id="st-cheer" ${store.get("sideline-cheer",true)?"checked":""}> The narrator cheers when I answer correctly</label></div>`:`<p class="muted">Voice isn't supported in this browser.</p>`}
+    <div class="row"><button class="btn" id="st-save">save</button>${Narr.supported?`<button class="btn ghost" id="st-test">${ICON.speak} test voice</button>`:""}<button class="btn ghost" id="st-close">close</button></div>`);
+  wirePills(); wireStudio();
+  const apply=()=>{ store.set("sideline-prefs",{name:$("#st-name").value.trim(),sports:readPills()}); if($("#st-rate")) store.set("sideline-rate",+$("#st-rate").value); if($("#st-pitch")) store.set("sideline-pitch",+$("#st-pitch").value); if($("#st-cheer")) store.set("sideline-cheer",$("#st-cheer").checked); };
+  $("#st-save").onclick=()=>{ apply(); closeModal(); render(); }; $("#st-close").onclick=closeModal;
+  if($("#st-test")) $("#st-test").onclick=()=>{ apply(); const n=$("#st-name").value.trim(); Narr.play([{title:"Voice test",text:`G'day${n?", "+n:""}. This is how I'll sound when I read you the paper.`}]); };
+}
+$("#btn-settings").onclick=settings;
+$("#btn-voice").onclick=()=>{ if(Narr.active){ Narr.stop(); return; } voiceMenu(); };
+$("#wm").onclick=()=>{ location.hash="today"; };
+
+/* ================= router ================= */
+function render(){
+  const cur=current(); renderTabs(cur); if(!ED) return; ART_ID=0; let h="";
+  if(cur==="today") h=vToday(); else if(SPORT_TAB[cur]) h=vSport(cur); else if(cur==="quiz") h=vQuiz(); else if(cur==="ask") h=vAsk(); else if(cur==="learn") h=vLearn();
+  $("#view").innerHTML=`<div class="fade">${h}</div>`;
+  if(cur==="today") wireToday(); if(SPORT_TAB[cur]) wireSport(cur); if(cur==="quiz") wireQuiz(); if(cur==="ask") wireAsk();
+  if(cur==="learn"){ $("#gl-s").oninput=e=>{$("#gl").innerHTML=glHTML(e.target.value);}; $$(".listen-p").forEach(b=>b.onclick=()=>{ const p=PRIMERS.find(x=>x[0]===b.dataset.t); Narr.play([{title:p[0],text:p[0]+", in two minutes. "+p[1]}],{kicker:"the primer"}); }); }
+}
+window.addEventListener("hashchange",()=>{ closeReader(); render(); window.scrollTo(0,0); });
+
+(async function init(){
+  renderTabs(current());
+  try{ const r=await fetch("edition.json?ts="+Date.now(),{cache:"no-store"}); if(!r.ok) throw 0; ED=normalise(await r.json()); }
+  catch(e){ $("#view").innerHTML=`<div class="loading">Today's edition couldn't be fetched. Do try again in a moment.</div>`; return; }
+  STORY=Object.fromEntries(ED.stories.map(s=>[s.id,s]));
+  const u=new Date(ED.updated);
+  $("#dl").textContent=new Date(ED.date+"T12:00:00").toLocaleDateString("en-GB",{weekday:"short",day:"numeric",month:"short"}).toLowerCase();
+  $("#foot").innerHTML=`${divider()}<div class="wm">The Sideline</div><div>Edited daily by Claude. Illustrations are our own house designs; headlines link to their original publishers. Scores and injuries change quickly, so mind the time stamp.</div><div style="margin-top:12px">Sources: ${(ED.sources||[]).map(s=>`<a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.title)}</a>`).join(" · ")}</div><div class="tartan band" style="margin-top:22px"></div>`;
+  render();
+  if(!store.get("sideline-onboarded",false)) setTimeout(onboarding,700);
+})();
+</script>
+</body>
+</html>

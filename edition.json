@@ -1,0 +1,2228 @@
+{
+ "schema": 2,
+ "date": "2026-11-07",
+ "updated": "2026-11-07T18:05:00-05:00",
+ "issue_note": "A Saturday of upsets and records: Manchester City lose a third straight, Nashville chase the record books on MLS Decision Day, and No. 1 Miami walk into South Bend tonight.",
+ "fact_of_the_day": {
+  "sport": "Olympics",
+  "text": "When the Summer Games come to Los Angeles in July 2028, it will become only the third city to host them three times, after London (1908, 1948, 2012) and Paris (1900, 1924, 2024)."
+ },
+ "lede": [
+  "europe-forest-city",
+  "cfb-nd-miami",
+  "mls-nashville",
+  "nwsl-quarterfinals",
+  "nfl-deadline",
+  "nba-luka-lebron",
+  "olympics-la28",
+  "cbb-season"
+ ],
+ "stories": [
+  {
+   "id": "europe-forest-city",
+   "section": "europe",
+   "sport": "Soccer",
+   "tag": "Premier League",
+   "headline": "Manchester City lose a third straight, and Arsenal pull six points clear",
+   "dek": "Nottingham Forest, who had not won a home league game all season, beat the pre-season title favourites 3–1, with a former City striker scoring twice.",
+   "body": [
+    "Some results surprise you, and some feel like a turning point. Nottingham Forest beating Manchester City 3–1 at the City Ground this afternoon might be both. Forest started the day in the relegation zone without a single home league win this season. City started it in second place, having won their first seven league games.",
+    "It took Forest six minutes. Defender Jair Cunha punished a City defensive mistake, and twelve minutes later Liam Delap ran from deep inside his own half through two defenders and fired in a second. Delap came through City's academy, which made it all the more pointed. Rayan Cherki pulled one back early in the second half with a lovely strike, and City pushed for an equaliser. Then Forest broke away once more and Delap scored again in the 73rd minute.",
+    "City had nearly four-fifths of the ball, but possession isn't the same as control. Forest defended deep and attacked at speed whenever City gave the ball away, which they did repeatedly. City have now lost three league games in a row after winning their first seven. Manager Enzo Maresca, in his first season in charge, said afterwards that his team hadn't matched Forest's intensity.",
+    "The ripples go beyond one match. Arsenal, the reigning champions, beat Hull City earlier today and now lead City by six points. Forest's win lifts them out of the bottom three, and that drops Manchester United, one of the most famous clubs in the world, into the relegation zone ahead of their home game against Aston Villa on Sunday."
+   ],
+   "backstory": [
+    "In English football there are no playoffs for the title: the team with the most points after 38 games is champion. The bottom three are 'relegated', meaning they drop down to the second division, the Championship, and the top three from that league come up to replace them. A season-long table therefore matters at both ends, and a single autumn afternoon can shift the mood of an entire club."
+   ],
+   "glossary": [
+    {
+     "t": "Relegation zone",
+     "d": "The bottom three places in the table. Finish there and you drop to a lower division next season."
+    },
+    {
+     "t": "Brace",
+     "d": "Two goals by one player in a single match."
+    },
+    {
+     "t": "Counter-attack",
+     "d": "Winning the ball and attacking quickly before the other team can reorganise."
+    },
+    {
+     "t": "Possession",
+     "d": "The share of the match one team has the ball. City had about 79%."
+    }
+   ],
+   "people": [
+    "Liam Delap"
+   ],
+   "question": {
+    "q": "In the Premier League, what happens to the three teams that finish at the bottom of the table?",
+    "options": [
+     "They play a relegation playoff",
+     "They are relegated to a lower division",
+     "They lose their best players to a draft",
+     "Nothing, the league is closed"
+    ],
+    "answer": 1,
+    "explain": "They are relegated to the Championship, and three clubs are promoted up. It's why a mid-table November win like Forest's can mean so much."
+   },
+   "why": "City were the title favourites in August. Three straight defeats, all after winning their first seven, is the kind of slump English football writers will spend all week dissecting.",
+   "dinner": "“Three in a row for Man City. Is that a wobble, or is something actually wrong with them?”",
+   "articles": [
+    {
+     "headline": "Nottingham Forest condemn Man City to 3rd straight Premier League loss",
+     "publisher": "ESPN",
+     "date": "2026-11-07",
+     "url": "https://www.espn.com/soccer/story/_/id/50410354/manchester-city-nottingham-forest-premier-league-loss"
+    },
+    {
+     "headline": "Nottingham Forest 3-1 Man City: Liam Delap ends City Ground goal drought as City lose three on the bounce",
+     "publisher": "Sky Sports",
+     "date": "2026-11-07",
+     "url": "https://www.skysports.com/football/nottingham-forest-vs-manchester-city/report/559542"
+    },
+    {
+     "headline": "City fall to disappointing defeat at Forest",
+     "publisher": "Manchester City FC",
+     "date": "2026-11-07",
+     "url": "https://www.mancity.com/news/mens/nottingham-forest-manchester-city-match-report-premier-league-63929666"
+    }
+   ]
+  },
+  {
+   "id": "europe-como",
+   "section": "europe",
+   "sport": "Soccer",
+   "tag": "Champions League",
+   "headline": "Little Como, from the lake, score nine in the Champions League",
+   "dek": "In their first-ever Champions League season, Cesc Fàbregas's side won 9–1 away at Lens and equalled the competition's scoring record.",
+   "body": [
+    "Como is better known for its lake, its silk, and the villas of the very wealthy than for football. Its club spent much of the last twenty years in Italy's lower divisions. This season it is playing in the Champions League for the first time, and on Wednesday night in northern France it equalled one of the competition's great records.",
+    "Como beat Lens 9–1, away from home, against eleven men. Only one team had ever scored nine in a Champions League match before: Bayern Munich, 9–2 against Dinamo Zagreb in 2024. No team had ever done it on the road. Striker Anastasios Douvikas scored a hat trick, and the Argentine playmaker Nico Paz ran the evening.",
+    "The coach is Cesc Fàbregas, a former midfielder for Arsenal, Barcelona and Chelsea who won the World Cup with Spain in 2010. He has built a team that plays the patient, passing football he grew up with in Barcelona. Como had already beaten RB Leipzig and Manchester United 4–1 at home this autumn, so perhaps the Lens result shouldn't have been quite such a surprise."
+   ],
+   "backstory": [
+    "The Champions League is Europe's elite club competition, played mostly on Tuesday and Wednesday nights alongside domestic leagues. Since 2024 it has used a 'league phase': 36 clubs each play eight different opponents, and the top of a single combined table goes through to the knockout rounds in the spring."
+   ],
+   "glossary": [
+    {
+     "t": "Hat trick",
+     "d": "Three goals by one player in one match."
+    },
+    {
+     "t": "League phase",
+     "d": "The Champions League's opening stage, in which 36 clubs share one big table."
+    },
+    {
+     "t": "Serie A",
+     "d": "Italy's top division."
+    }
+   ],
+   "people": [
+    "Cesc Fàbregas"
+   ],
+   "question": {
+    "q": "Como's manager, Cesc Fàbregas, won the World Cup as a player for which country?",
+    "options": [
+     "Italy",
+     "France",
+     "Spain",
+     "Argentina"
+    ],
+    "answer": 2,
+    "explain": "Fàbregas won the 2010 World Cup with Spain. In fact, he set up Andrés Iniesta's winning goal in the final."
+   },
+   "why": "It's the sort of fairytale European football adores: a small lakeside club, a famous player turned coach, and a result for the history books.",
+   "dinner": "“Did you see Como scored nine? They're the club from Lake Como, the George Clooney lake.”",
+   "articles": [
+    {
+     "headline": "Como beat hapless Lens 9-1 on record breaking night for Cesc Fabregas' team",
+     "publisher": "Irish Examiner",
+     "date": "2026-11-04",
+     "url": "https://www.irishexaminer.com/sport/soccer/arid-41933457.html"
+    },
+    {
+     "headline": "Como equal UCL record with historic 9-1 win over Lens",
+     "publisher": "theScore",
+     "date": "2026-11-04",
+     "url": "https://www.thescore.com/seri/news/3645258/como-equal-ucl-record-with-historic-9-1-win-over-lens"
+    }
+   ]
+  },
+  {
+   "id": "cfb-nd-miami",
+   "section": "cfb",
+   "sport": "Football",
+   "tag": "College football · Tonight 7:30 ET",
+   "headline": "Unbeaten No. 1 Miami walks into South Bend",
+   "dek": "Miami (8–0) visits Notre Dame (7–1) in prime time, in one of college football's most storied, and once most bitter, rivalries.",
+   "body": [
+    "Tonight at 7:30 Eastern, on NBC, the top-ranked Miami Hurricanes play at Notre Dame. Miami are 8–0 and first in the College Football Playoff rankings. Notre Dame are 7–1 and, slightly to their irritation, only eleventh. Even so, Notre Dame go in as narrow favourites, because playing at home in South Bend in November is a real advantage.",
+    "Both teams have a lot riding on it. A win for Miami would all but confirm a playoff place and keep them on course for the top seed. Notre Dame has a special arrangement as a team with no conference: if it finishes in the top 12 of the final rankings, it is guaranteed a playoff spot. A home win over the No. 1 team would make that very likely.",
+    "Miami's quarterback is Darian Mensah, who has guided an efficient, high-scoring offence all season. Notre Dame are coached by Marcus Freeman, in his fifth season, who has turned the Irish into a perennial contender. One curious bit of trivia: the visiting team hasn't won this fixture since Miami did so in South Bend in 1984."
+   ],
+   "backstory": [
+    "In the late 1980s this was the fiercest rivalry in American sport: swaggering Miami against the Catholic tradition of Notre Dame, with T-shirts sold outside the stadium calling it 'Catholics vs. Convicts.' Notre Dame's famous 31–30 win in 1988 helped carry them to a national championship. Last January, Miami reached the national title game but lost 27–21 to Indiana, and they have been hungry ever since."
+   ],
+   "glossary": [
+    {
+     "t": "CFP rankings",
+     "d": "The College Football Playoff committee's weekly top 25, which decides who makes the 12-team playoff."
+    },
+    {
+     "t": "Independent",
+     "d": "A school that isn't in a football conference. Notre Dame is the most famous one."
+    },
+    {
+     "t": "Prime time",
+     "d": "The evening TV slot, usually 7:30 or 8 PM Eastern, reserved for the biggest games."
+    }
+   ],
+   "people": [
+    "Darian Mensah",
+    "Marcus Freeman"
+   ],
+   "question": {
+    "q": "How many teams make this season's College Football Playoff?",
+    "options": [
+     "4",
+     "8",
+     "12",
+     "16"
+    ],
+    "answer": 2,
+    "explain": "Twelve. The five best-ranked conference champions get automatic places, and the next seven highest-ranked teams join them. The top four seeds get a first-round bye."
+   },
+   "why": "It's the biggest regular-season game in South Bend in years, and it will shape Tuesday night's new playoff rankings.",
+   "dinner": "“Miami's number one but Notre Dame's favoured. Is home field really worth that much?”",
+   "articles": [
+    {
+     "headline": "Notre Dame football: Preview and predictions for the Irish in 2026",
+     "publisher": "FOX 32 Chicago",
+     "date": "",
+     "url": "https://www.fox32chicago.com/sports/notre-dame-football-preview-predictions-irish-2026"
+    },
+    {
+     "headline": "Miami, Georgia lead the first College Football Playoff rankings of 2026",
+     "publisher": "NCAA.com",
+     "date": "2026-11-04",
+     "url": "https://ncaa.com/news/football/article/2026-11-03/miami-georgia-lead-first-college-football-playoff-rankings-2026"
+    }
+   ]
+  },
+  {
+   "id": "cfb-rankings",
+   "section": "cfb",
+   "sport": "Football",
+   "tag": "College football · Playoff race",
+   "headline": "How the 12-team playoff picture looks, and why UCLA is the surprise",
+   "dek": "The committee's first rankings put Miami, Georgia, Utah and Indiana on top. New rankings arrive Tuesday night.",
+   "body": [
+    "College football doesn't simply crown its champion from a league table. A 13-person selection committee publishes a top 25 every Tuesday in November, then picks a 12-team playoff field on Sunday, December 6. The first rankings came out this week: Miami, Georgia, Utah, Indiana, Alabama, Kentucky, Texas and UCLA, followed by BYU, Ole Miss, Notre Dame and Ohio State.",
+    "UCLA is the story nobody predicted. Under first-year coach Bob Chesney they are 9–0, yet they only opened at No. 8, partly because their schedule has been considered softer. Boise State, at 25th, is the only team from outside the big conferences in the rankings. That matters because the highest-ranked champion from one of the smaller 'Group of Six' conferences is guaranteed a place.",
+    "Several of today's games, including Ohio State against Oregon and LSU against Alabama, were under way as this edition went to press, and Notre Dame hosts No. 1 Miami tonight. The next rankings arrive Tuesday at 9 PM Eastern. The playoff starts on December 18, and the championship game is on January 25 in Las Vegas."
+   ],
+   "backstory": [
+    "For decades college football's champion was chosen by polls of journalists and coaches, which led to endless arguments. A two-team title game arrived in 1998, a four-team playoff in 2014, and the current 12-team format in 2024. There is serious talk of going to 24 teams as soon as 2027."
+   ],
+   "glossary": [
+    {
+     "t": "Group of Six",
+     "d": "The smaller conferences outside the 'power four' (SEC, Big Ten, ACC, Big 12)."
+    },
+    {
+     "t": "Bye",
+     "d": "Skipping a round. The top four seeds skip the playoff's first round."
+    },
+    {
+     "t": "Selection committee",
+     "d": "The panel of athletic directors and former coaches who rank the teams."
+    }
+   ],
+   "people": [],
+   "question": {
+    "q": "Where will this season's college football national championship game be played?",
+    "options": [
+     "Pasadena, California",
+     "Las Vegas, Nevada",
+     "New Orleans, Louisiana",
+     "Atlanta, Georgia"
+    ],
+    "answer": 1,
+    "explain": "At Allegiant Stadium in Las Vegas on Monday, January 25, 2027."
+   },
+   "why": "Every Saturday in November now reshuffles a 12-team bracket, so each weekend has real stakes for a dozen or more teams.",
+   "dinner": "“UCLA is 9–0 and only eighth? That committee clearly doesn't trust them yet.”",
+   "articles": [
+    {
+     "headline": "Miami, Georgia lead the first College Football Playoff rankings of 2026",
+     "publisher": "NCAA.com",
+     "date": "2026-11-04",
+     "url": "https://ncaa.com/news/football/article/2026-11-03/miami-georgia-lead-first-college-football-playoff-rankings-2026"
+    },
+    {
+     "headline": "College Football Playoff 2026 Rankings Released Ahead of Week 10",
+     "publisher": "Bleacher Report",
+     "date": "2026-11-03",
+     "url": "https://bleacherreport.com/articles/25529145-college-football-playoff-2026-rankings-released-ahead-week-10"
+    },
+    {
+     "headline": "2026 College Football Playoff Rankings: Miami No. 1, Notre Dame Outside Top 10",
+     "publisher": "FOX Sports",
+     "date": "2026-11-03",
+     "url": "https://www.foxsports.com/stories/college-football/2026-college-football-playoff-rankings"
+    }
+   ]
+  },
+  {
+   "id": "mls-nashville",
+   "section": "mls",
+   "sport": "Soccer",
+   "tag": "MLS · Decision Day",
+   "headline": "Nashville chase the greatest regular season in MLS history",
+   "dek": "Every MLS team played at once today. Nashville needed only a draw at Cincinnati to break Inter Miami's points record.",
+   "body": [
+    "Decision Day is MLS's grand finale. Every team plays its last regular-season match at the same time, in two waves: the East at 4 PM Eastern and the West at 7 PM. Because nobody can wait and react to another result, the tension is shared across the whole league at once.",
+    "Nashville SC came into it already crowned Supporters' Shield winners, the trophy for the best regular-season record. They were level on 74 points with Inter Miami's 2024 record, so a draw at FC Cincinnati would break it and a win would take them to 77. They also went the whole season unbeaten at home, and became the first team in MLS history to win 15 home matches in a season. At press time Nashville led 1–0 late in the game, on course for 77 points and the record.",
+    "The architects are coach B.J. Callaghan, striker Sam Surridge, who has 19 goals, and Hany Mukhtar, the club's long-time creative heart. Nashville joined the league only in 2020, so this is a remarkably fast rise.",
+    "After today the league pauses for international matches. The playoffs begin the week of November 18, and MLS Cup is on December 18. Inter Miami, led by Lionel Messi, are the defending champions after winning their first MLS Cup last year."
+   ],
+   "backstory": [
+    "MLS works more like American leagues than European ones: there's no relegation, and the champion is decided by a playoff tournament. The Supporters' Shield was created by fans in 1999 to honour the best regular-season team, and many purists consider it the truer measure of a season."
+   ],
+   "glossary": [
+    {
+     "t": "Supporters' Shield",
+     "d": "The MLS trophy for the best regular-season record."
+    },
+    {
+     "t": "Decision Day",
+     "d": "The final regular-season matchday, when every team kicks off together."
+    },
+    {
+     "t": "Wild card",
+     "d": "In MLS, the 8th and 9th seeds in each conference play a one-off match to reach the playoffs proper."
+    }
+   ],
+   "people": [
+    "Sam Surridge",
+    "Hany Mukhtar",
+    "Lionel Messi"
+   ],
+   "question": {
+    "q": "What is the Supporters' Shield?",
+    "options": [
+     "The MLS Cup final trophy",
+     "The trophy for the best regular-season record",
+     "A sportsmanship award",
+     "A trophy decided by fan vote"
+    ],
+    "answer": 1,
+    "explain": "It goes to the team with the most regular-season points. Nashville won it this year before today's match had even started."
+   },
+   "why": "A record season makes Nashville the team to beat in the playoffs, though, as Messi's Miami found in 2024, the best regular-season team doesn't always lift the Cup.",
+   "dinner": "“Nashville have only been in MLS since 2020 and they might have just had the best season ever. How?”",
+   "articles": [
+    {
+     "headline": "Nashville SC chase MLS points record on Decision Day",
+     "publisher": "MLSsoccer.com",
+     "date": "2026-11-05",
+     "url": "https://www.mlssoccer.com/news/nashville-sc-chase-mls-points-record-on-decision-day-history"
+    },
+    {
+     "headline": "Nashville Soccer Club Ties MLS Record for Most Points in a Single Season",
+     "publisher": "Williamson Source",
+     "date": "2026-11-01",
+     "url": "https://williamsonsource.com/nashville-soccer-club-ties-mls-record-for-most-points-in-a-single-season/"
+    },
+    {
+     "headline": "MLS Decision Day LIVE 2026: Clinching scenarios, standings and schedule",
+     "publisher": "Yahoo Sports",
+     "date": "2026-11-07",
+     "url": "https://sports.yahoo.com/articles/mls-decision-day-2026-clinching-130125154.html"
+    }
+   ]
+  },
+  {
+   "id": "nwsl-quarterfinals",
+   "section": "nwsl",
+   "sport": "Soccer",
+   "tag": "NWSL · Playoffs",
+   "headline": "Utah's fairytale, a 96th-minute penalty, and Rodman vs Wilson on Sunday",
+   "dek": "The women's league playoffs are under way. Two upsets in, two quarterfinals to go, and the final is in Washington on November 21.",
+   "body": [
+    "The National Women's Soccer League, the NWSL, is the strongest women's club league in the world, and its eight-team playoffs began this weekend. Every round is a single match: lose and you're out.",
+    "On Friday night the seventh-seeded Utah Royals, in their first-ever playoffs, beat second seed San Diego 1–0. Kiana Palacios scored from a low cross by Cloé Lacasse in the 30th minute, and goalkeeper Mandy McGlynn made four saves for her sixth clean sheet of the season. San Diego had far more of the ball and still couldn't score.",
+    "Then today, Kansas City beat Angel City 1–0 in extra time thanks to a Michelle Cooper penalty in the 96th minute. Angel City's interim coach was furious about the decision, but the Current are through to the semifinals.",
+    "Sunday brings a double bill. At 12:30 Eastern, Gotham FC host the Seattle Reign. Gotham are the reigning champions and won their first-ever Shield for the best regular season. Then at 3 PM on ABC, the Washington Spirit host the Portland Thorns in a rematch of last year's semifinal. It's also a duel between two of America's brightest stars: Washington's Trinity Rodman and Portland's Sophia Wilson, who has returned this season after the birth of her first child."
+   ],
+   "backstory": [
+    "The NWSL launched in 2013 and has grown to 16 teams, with Boston and Denver joining this season. Its biggest stars are also the backbone of the U.S. women's national team, four-time World Cup winners, so these playoff games are a chance to watch the best players in women's soccer up close."
+   ],
+   "glossary": [
+    {
+     "t": "Clean sheet",
+     "d": "A match in which a goalkeeper and team concede no goals."
+    },
+    {
+     "t": "Extra time",
+     "d": "Two 15-minute periods added when a knockout match is tied after 90 minutes."
+    },
+    {
+     "t": "NWSL Shield",
+     "d": "The NWSL's trophy for the best regular-season record. Gotham won it this year."
+    }
+   ],
+   "people": [
+    "Trinity Rodman",
+    "Sophia Wilson"
+   ],
+   "question": {
+    "q": "If an NWSL playoff match is tied after 90 minutes, what happens first?",
+    "options": [
+     "A replay is scheduled",
+     "It goes straight to penalties",
+     "Two 15-minute periods of extra time",
+     "The higher seed advances"
+    ],
+    "answer": 2,
+    "explain": "Two full 15-minute periods of extra time come first. If it's still level after those, it goes to a penalty shootout."
+   },
+   "why": "Rodman vs Wilson is the marquee individual matchup in American women's soccer, and it's on national TV on Sunday afternoon.",
+   "dinner": "“Utah had never won a playoff game, and they knocked out the second seed. Isn't that the best kind of story?”",
+   "articles": [
+    {
+     "headline": "The Utah Royals stun the San Diego Wave 1-0 in the NWSL quarterfinals",
+     "publisher": "ABC News (AP)",
+     "date": "2026-11-07",
+     "url": "https://abcnews.com/Sports/wireStory/utah-royals-stun-san-diego-wave-1-0-137936645"
+    },
+    {
+     "headline": "Angel City slam 'tremendously cheap' penalty in Current quarterfinal win",
+     "publisher": "ESPN",
+     "date": "2026-11-07",
+     "url": "https://espn.com/soccer/story/_/id/50411782/angel-city-kansas-city-current-penalty-nwsl-quarterfinal"
+    },
+    {
+     "headline": "2026 MLS and NWSL playoff preview: Key dates, biggest storylines, formats and tickets",
+     "publisher": "SeatGeek",
+     "date": "2026-11-02",
+     "url": "https://seatgeek.com/blog/mls-and-nwsl-playoff-preview-key-dates-biggest-storylines-formats-and-tickets"
+    }
+   ]
+  },
+  {
+   "id": "csoc-college-cup",
+   "section": "csoc",
+   "sport": "Soccer",
+   "tag": "College soccer",
+   "headline": "College soccer's tournament season begins, with a new finale in Cary",
+   "dek": "Conference tournaments decide this week who gets in. For the first time, the men's and women's finals share a weekend.",
+   "body": [
+    "November is when college soccer comes alive. Conferences are holding their own tournaments this week, and the winners earn automatic places in the NCAA tournament. The women's field of 64 is revealed on Monday, November 16, and the first round is November 20–22. The men's tournament has 48 teams, and this year 24 of them will be seeded, up from 16.",
+    "There's a new rhythm this year. NCAA rules extended the Division I season by two weeks, to give players more rest and less missed class time. As a result, the men's and women's College Cups, the final four of each, will be played on the same weekend, December 11–14, at WakeMed Soccer Park in Cary, North Carolina. That's never happened before.",
+    "On the men's side, SMU have spent the autumn at the top of the coaches' poll, unbeaten at 12–0–2 in the latest version, ahead of Georgetown and Clemson. In the women's game, Florida State are the defending national champions after beating Stanford in last December's final."
+   ],
+   "backstory": [
+    "College soccer is where many American players, especially women, are developed. Most stars of the U.S. women's national team played in college, and North Carolina's women's program, coached for decades by Anson Dorrance, has won more than twenty national titles."
+   ],
+   "glossary": [
+    {
+     "t": "Automatic bid",
+     "d": "A guaranteed tournament place earned by winning your conference."
+    },
+    {
+     "t": "At-large bid",
+     "d": "A place awarded by the selection committee to a team that didn't win its conference."
+    },
+    {
+     "t": "College Cup",
+     "d": "The semifinals and final of the NCAA soccer tournament."
+    }
+   ],
+   "people": [],
+   "question": {
+    "q": "How many teams are in the NCAA Division I women's soccer tournament?",
+    "options": [
+     "32",
+     "48",
+     "64",
+     "68"
+    ],
+    "answer": 2,
+    "explain": "64 teams. Thirty-one conference champions qualify automatically, and the committee picks the rest. The men's field is 48."
+   },
+   "why": "The College Cup is where you'll see tomorrow's national-team players first. And this year both finals are in the same place on the same weekend.",
+   "dinner": "“Did you know the men's and women's college soccer finals are in the same town on the same weekend this year? First time ever.”",
+   "articles": [
+    {
+     "headline": "Road to the Championship: DI Women's Soccer",
+     "publisher": "NCAA.com",
+     "date": "",
+     "url": "https://www.ncaa.com/championships/soccer-women/d1/road-to-the-championship"
+    },
+    {
+     "headline": "DI field hockey, men's soccer to seed 50% of their championship brackets",
+     "publisher": "NCAA.org",
+     "date": "",
+     "url": "https://www.ncaa.org/news/di-field-hockey-mens-soccer-to-seed-50-of-their-championship-brackets/"
+    },
+    {
+     "headline": "NCAA Men's Soccer 2026 Rankings: Marshall and Bryant reach the Top 25",
+     "publisher": "SoccerWire",
+     "date": "",
+     "url": "https://www.soccerwire.com/?p=209230"
+    }
+   ]
+  },
+  {
+   "id": "nfl-deadline",
+   "section": "nfl",
+   "sport": "Football",
+   "tag": "NFL · Deadline Tue 4 PM ET",
+   "headline": "Trade deadline week: contenders spend the future to win now",
+   "dek": "NFL teams can trade until Tuesday afternoon. A flurry of deals has already reshaped several rosters.",
+   "body": [
+    "Until 4 PM Eastern on Tuesday, NFL teams can trade players with each other. After that, rosters are largely set for the rest of the season. It's a week of nervous phone calls and quiet gambles.",
+    "The biggest deal came on October 29. The rebuilding Tennessee Titans sent star defensive tackle Jeffery Simmons to the Chicago Bears for two first-round draft picks. Chicago, 6–2 and one of the season's best stories, decided its moment is now. The New York Giants traded for quarterback J.J. McCarthy, the Houston Texans added receiver Marvin Harrison Jr., the Colts parted with long-time stalwarts Quenton Nelson and DeForest Buckner, and Pittsburgh sent cornerback Joey Porter Jr. to Dallas.",
+    "Then came the desperate one. With Lamar Jackson out, Baltimore traded for veteran quarterback Jacoby Brissett, who could start as soon as Monday week."
+   ],
+   "backstory": [
+    "Unlike European soccer, the NFL has no transfer fees. Teams swap players for other players or for draft picks, which are rights to choose college players in next spring's draft. A first-round pick is the most valuable currency in the sport, so giving up two of them, as Chicago did, is a loud statement of intent."
+   ],
+   "glossary": [
+    {
+     "t": "Draft pick",
+     "d": "The right to choose a college player in the annual NFL Draft. Earlier rounds are more valuable."
+    },
+    {
+     "t": "Trade deadline",
+     "d": "The last moment in the season when teams can trade players."
+    },
+    {
+     "t": "Defensive tackle",
+     "d": "A big lineman in the middle of the defense who disrupts the run and pressures the quarterback."
+    }
+   ],
+   "people": [
+    "Caleb Williams"
+   ],
+   "question": {
+    "q": "When NFL teams trade for a star, what do they most often give up instead of money?",
+    "options": [
+     "Stadium revenue",
+     "Draft picks",
+     "Salary-cap space only",
+     "Home games"
+    ],
+    "answer": 1,
+    "explain": "Draft picks. They're the NFL's main trading currency, and first-round picks are the most precious of all."
+   },
+   "why": "These deals decide who's a contender in January, and who's quietly planning for next year.",
+   "dinner": "“Two first-round picks for one defensive tackle. Is that genius from Chicago, or madness?”",
+   "articles": [
+    {
+     "headline": "2026 NFL trade deadline updates: Jacoby Brissett, Jeffery Simmons on the move",
+     "publisher": "ESPN",
+     "date": "",
+     "url": "https://espn.com/nfl/story/_/id/50043471/2026-trade-deadline-updates-latest-news-deals-terms"
+    },
+    {
+     "headline": "2026 NFL Week 9 Biggest Takeaways for Every Team",
+     "publisher": "Bleacher Report",
+     "date": "",
+     "url": "https://bleacherreport.com/articles/25529814-2026-nfl-week-9-biggest-takeaways-every-team"
+    }
+   ]
+  },
+  {
+   "id": "nfl-lamar",
+   "section": "nfl",
+   "sport": "Football",
+   "tag": "NFL · Injury",
+   "headline": "One snap, then surgery: Baltimore's quarterback crisis",
+   "dek": "Lamar Jackson returned from an ankle injury and hurt his throwing thumb on his very first play.",
+   "body": [
+    "On November 1 in Buffalo, Lamar Jackson came back from a high ankle sprain that had kept him out for weeks. On Baltimore's very first offensive snap he injured his right thumb, the one on his throwing hand. He needs surgery, he has been placed on injured reserve, and his coach says he may not play again this season.",
+    "It got worse. His backup, Tyler Huntley, hurt his toe in the second quarter, leaving rookie Joe Fagnano as Baltimore's only healthy quarterback. On Thursday night Fagnano started against Jacksonville, and the Ravens lost 33–10 to fall to 4–5.",
+    "Baltimore have since traded for Jacoby Brissett, a steady veteran, to stop the bleeding. It's a vivid illustration of an old NFL truth: there aren't enough good quarterbacks to go around, and when your star goes down, the season can go with him."
+   ],
+   "backstory": [
+    "Jackson is one of the most electrifying players of his generation, a quarterback who runs like a sprinter. He was named the league's Most Valuable Player in 2019 and again in 2023."
+   ],
+   "glossary": [
+    {
+     "t": "Injured reserve (IR)",
+     "d": "A list for hurt players. They must miss several games but don't take up a roster spot."
+    },
+    {
+     "t": "Snap",
+     "d": "The start of each play, when the centre passes the ball back to the quarterback."
+    },
+    {
+     "t": "High ankle sprain",
+     "d": "An injury to the ligaments above the ankle, notoriously slow to heal."
+    }
+   ],
+   "people": [
+    "Lamar Jackson"
+   ],
+   "question": {
+    "q": "How many times has Lamar Jackson been named NFL Most Valuable Player?",
+    "options": [
+     "Never",
+     "Once",
+     "Twice",
+     "Three times"
+    ],
+    "answer": 2,
+    "explain": "Twice, in 2019 and 2023. He's one of the few players ever to win it unanimously (in 2019)."
+   },
+   "why": "Baltimore were expected to contend. Without Jackson, even making the playoffs is in doubt.",
+   "dinner": "“Coming back from injury and getting hurt on the very first play is just cruel.”",
+   "articles": [
+    {
+     "headline": "Lamar Jackson needs surgery for thumb injury and could miss rest of season, Ravens coach says",
+     "publisher": "Atlanta Journal-Constitution (AP)",
+     "date": "2026-11-01",
+     "url": "https://www.ajc.com/news/2026/11/lamar-jackson-needs-surgery-on-his-injured-thumb-and-it-could-be-season-ending-ravens-coach-jesse-minter-says/"
+    },
+    {
+     "headline": "NFL injury roundup: Ravens in QB peril after Lamar Jackson, Tyler Huntley hurt",
+     "publisher": "Field Level Media",
+     "date": "2026-11-01",
+     "url": "https://fieldlevelmedia.com/nfl/nfl-injury-roundup-ravens-in-qb-peril-after-lamar-jackson-tyler-huntley-hurt/"
+    }
+   ]
+  },
+  {
+   "id": "nba-luka-lebron",
+   "section": "nba",
+   "sport": "Basketball",
+   "tag": "NBA · Early season",
+   "headline": "LeBron's new chapter in Philadelphia, and Luka's MVP case in L.A.",
+   "dek": "Three weeks into the season, the summer's great reshuffle is producing exactly the drama everyone hoped for.",
+   "body": [
+    "This summer LeBron James left the Los Angeles Lakers after seven seasons and signed with the Philadelphia 76ers for his record 24th season. Philadelphia started brilliantly, including a record 29-point comeback against Cleveland, and are 8–2. On Friday, though, he returned to Cleveland, where he won a championship in 2016, and the 76ers were beaten 119–95.",
+    "Back in Los Angeles, the Lakers have handed the keys to Luka Dončić, and he is playing like a man with a point to prove. He scored 42 and 45 points in back-to-back games last week, and the Lakers lead the West at 8–2. Commentators have noticed he's also defending and passing with new commitment, which is the sort of thing that wins MVP awards.",
+    "The rest of the map has been redrawn too. Giannis Antetokounmpo is now with the Miami Heat, who are 3–6, and Kawhi Leonard is back in Toronto. The New York Knicks are the defending champions but have started a so-so 4–4. In San Antonio, Victor Wembanyama's Spurs are 7–2."
+   ],
+   "backstory": [
+    "NBA teams play 82 games from October to April. The top six in each conference qualify for the playoffs directly, seeds seven to ten play a short 'play-in' tournament, and the Finals are in June. With only five players on court, one superstar matters enormously, which is why player movement dominates the conversation."
+   ],
+   "glossary": [
+    {
+     "t": "MVP",
+     "d": "Most Valuable Player, the award for the regular season's best player."
+    },
+    {
+     "t": "Back-to-back",
+     "d": "Games on consecutive nights."
+    },
+    {
+     "t": "Play-in",
+     "d": "A mini-tournament for seeds 7–10 to win the last playoff spots."
+    }
+   ],
+   "people": [
+    "LeBron James",
+    "Luka Dončić",
+    "Victor Wembanyama"
+   ],
+   "question": {
+    "q": "LeBron James holds the NBA's all-time record for what?",
+    "options": [
+     "Most championships",
+     "Most points scored",
+     "Most three-pointers",
+     "Most blocked shots"
+    ],
+    "answer": 1,
+    "explain": "Most career points. He passed Kareem Abdul-Jabbar in 2023 and has kept adding to the total ever since."
+   },
+   "why": "Two of the sport's biggest stars, two famous franchises, and a breakup storyline. The NBA could hardly have scripted it better.",
+   "dinner": "“The Lakers might be better without LeBron. Imagine saying that two years ago.”",
+   "articles": [
+    {
+     "headline": "Luka Dončić Wants the MVP. He Unlocked Another Part of His Game to Chase It.",
+     "publisher": "Sports Illustrated",
+     "date": "2026-11-04",
+     "url": "https://www.si.com/nba"
+    },
+    {
+     "headline": "NBA Power Rankings: Summing up all 30 teams' starts",
+     "publisher": "ESPN",
+     "date": "2026-11-04",
+     "url": "https://espn.com/nba/story/_/id/50371604/nba-power-rankings-30-teams-rank-week-two-describe-season"
+    },
+    {
+     "headline": "3 biggest storylines heading into 2026-27 NBA season",
+     "publisher": "Yahoo Sports",
+     "date": "",
+     "url": "https://sports.yahoo.com/articles/3-biggest-storylines-heading-2026-142646071.html"
+    }
+   ]
+  },
+  {
+   "id": "cbb-season",
+   "section": "cbb",
+   "sport": "Basketball",
+   "tag": "College basketball · Men's",
+   "headline": "College basketball tips off, beginning in Rome",
+   "dek": "Florida opened as the No. 1 team, Michigan are the champions, and the season literally began in Italy.",
+   "body": [
+    "The men's college basketball season began on November 1 in, of all places, Rome, where Notre Dame played Villanova. It was a charming way to open a sport that ends each spring with March Madness, the national tournament in which a single bad night ends a season.",
+    "Florida begin as the No. 1 team in the preseason AP poll for the first time since 2006, under coach Todd Golden, who won the title with them in 2025. Duke, Illinois and UConn follow. The defending champions are Michigan, who beat UConn in last April's final for their first title since 1989, but their coach, Dusty May, has since left to coach the NBA's Dallas Mavericks.",
+    "One milestone is close: Kentucky is about to become the first program to spend 1,000 weeks in the AP Top 25. Today brought a thriller too: Memphis edged VCU 89–88."
+   ],
+   "backstory": [
+    "College basketball's real season starts in March, with the 'Big Dance', the NCAA tournament. Upsets of famous schools by tiny ones are the tournament's signature, and they're why millions of Americans fill in brackets, including plenty who never watch otherwise."
+   ],
+   "glossary": [
+    {
+     "t": "AP poll",
+     "d": "A weekly top 25 voted on by sports journalists."
+    },
+    {
+     "t": "March Madness",
+     "d": "The NCAA tournament in March and April that decides the national champion."
+    },
+    {
+     "t": "Transfer portal",
+     "d": "The system college players use to move to another school."
+    }
+   ],
+   "people": [
+    "Todd Golden"
+   ],
+   "question": {
+    "q": "Where did the 2026–27 men's college basketball season tip off?",
+    "options": [
+     "London",
+     "Rome",
+     "Paris",
+     "Dublin"
+    ],
+    "answer": 1,
+    "explain": "In Rome, with Notre Dame against Villanova on November 1."
+   },
+   "why": "Early-season games are where favourites are tested and future NBA stars first appear.",
+   "dinner": "“They opened the college basketball season in Rome. Next year Paris, surely?”",
+   "articles": [
+    {
+     "headline": "Florida selected runaway No. 1 team in preseason AP Top 25",
+     "publisher": "Field Level Media",
+     "date": "2026-10-19",
+     "url": "https://fieldlevelmedia.com/ncaab/florida-selected-runaway-no-1-team-in-preseason-ap-top-25/"
+    },
+    {
+     "headline": "Breaking down the men's AP preseason Top 25 NCAA basketball poll",
+     "publisher": "TSN",
+     "date": "",
+     "url": "https://www.tsn.ca/ncaa/article/breaking-down-the-mens-ap-preseason-top-25-ncaa-basketball-poll-n1-50191393/"
+    }
+   ]
+  },
+  {
+   "id": "cbb-women",
+   "section": "cbb",
+   "sport": "Basketball",
+   "tag": "College basketball · Women's",
+   "headline": "South Carolina start at No. 1 as women's college basketball keeps growing",
+   "dek": "Dawn Staley's Gamecocks top the preseason poll. UCLA are the defending champions.",
+   "body": [
+    "Women's college basketball has become one of the most-watched shows in American sport, and the new season brings a familiar name at the top. South Carolina, coached by Dawn Staley, are preseason No. 1 for the fifth time in seven years, with 23 of 31 first-place votes. UConn are second and USC third, and Michigan are fifth, the highest preseason ranking in their history.",
+    "The defending national champions are UCLA, who won last spring's title but begin this season only 11th after losing key players. The record for the lowest preseason ranking by an eventual champion belongs to LSU, who started at No. 16 in 2022–23 and went all the way, so a pre-season ranking promises nothing.",
+    "UConn, coached by the legendary Geno Auriemma, are always in the conversation. Their forward Sarah Strong is one of the best players in the country."
+   ],
+   "backstory": [
+    "The sport's popularity surged with stars like Caitlin Clark, Angel Reese and Paige Bueckers, whose college duels drew television audiences larger than many men's games. Those stars have moved on to the WNBA, but the audience they built has stayed."
+   ],
+   "glossary": [
+    {
+     "t": "Preseason poll",
+     "d": "Journalists' rankings before any games are played, based on reputation and returning players."
+    },
+    {
+     "t": "First-place votes",
+     "d": "How many voters ranked a team No. 1."
+    }
+   ],
+   "people": [
+    "Dawn Staley",
+    "Sarah Strong"
+   ],
+   "question": {
+    "q": "Which school won the 2026 women's college basketball national championship?",
+    "options": [
+     "South Carolina",
+     "UConn",
+     "UCLA",
+     "LSU"
+    ],
+    "answer": 2,
+    "explain": "UCLA are the defending champions. They begin this season ranked 11th."
+   },
+   "why": "Women's college basketball now draws national prime-time audiences, and it's where the next generation of WNBA stars is made.",
+   "dinner": "“Dawn Staley's teams are No. 1 again. Is there a better coach in college sports right now?”",
+   "articles": [
+    {
+     "headline": "South Carolina leads the 2026 preseason AP Top 25 women's basketball rankings",
+     "publisher": "NCAA.com",
+     "date": "2026-10-20",
+     "url": "https://ncaa.com/news/basketball-women/article/2026-10-20/south-carolina-leads-2026-preseason-ap-top-25-womens-basketball-rankings"
+    },
+    {
+     "headline": "AP College Basketball Poll 2026 Preseason Women's Rankings Released",
+     "publisher": "Bleacher Report",
+     "date": "2026-10-20",
+     "url": "https://bleacherreport.com/articles/25513569-ap-college-basketball-poll-2026-preseason-womens-rankings-released"
+    }
+   ]
+  },
+  {
+   "id": "mlb-brewers",
+   "section": "mlb",
+   "sport": "Baseball",
+   "tag": "MLB · Offseason",
+   "headline": "Milwaukee's first World Series, and what baseball does all winter",
+   "dek": "The Brewers are champions for the first time. Now come the awards and the 'hot stove' of trades and signings.",
+   "body": [
+    "On October 28, at Tropicana Field in St. Petersburg, the Milwaukee Brewers beat the Tampa Bay Rays to win the first World Series in the franchise's history. Their catcher, William Contreras, was named World Series MVP after hitting .381. Two days later Milwaukee threw a parade.",
+    "It was a long time coming. The club was born in 1969 as the Seattle Pilots, went bankrupt after one season, and moved to Wisconsin. Its only previous World Series appearance was in 1982. Along the way this October, Milwaukee knocked out the Los Angeles Dodgers, the two-time defending champions.",
+    "Now baseball goes quiet on the field, though not off it. The individual awards are announced next week: Rookie of the Year, Manager of the Year, the Cy Young for the best pitcher, and the Most Valuable Player. Free agency has also opened, which means players whose contracts have ended can sign with any team. The 2027 season starts in late March."
+   ],
+   "backstory": [
+    "Baseball has the longest season of any major sport, 162 games, and the richest tradition of statistics and writing. Everyone from Walt Whitman to Philip Roth has written about it. Its offseason chatter is known as the 'hot stove league', after fans who once gathered around stoves in winter to argue about trades."
+   ],
+   "glossary": [
+    {
+     "t": "Free agent",
+     "d": "A player whose contract has ended and who can sign with any team."
+    },
+    {
+     "t": "Cy Young Award",
+     "d": "The award for the best pitcher in each league."
+    },
+    {
+     "t": "Batting average",
+     "d": "Hits divided by at-bats. .300 is excellent, and Contreras hit .381 in the Series."
+    }
+   ],
+   "people": [
+    "William Contreras",
+    "Christian Yelich",
+    "Shohei Ohtani"
+   ],
+   "question": {
+    "q": "How many games must a team win to take the World Series?",
+    "options": [
+     "Three",
+     "Four",
+     "Five",
+     "Seven"
+    ],
+    "answer": 1,
+    "explain": "Four. It's a best-of-seven series, so the first team to win four games is champion."
+   },
+   "why": "Small-market Milwaukee beating baseball's big spenders is the kind of story the sport loves, and their winter moves will decide whether they can do it again.",
+   "dinner": "“The Brewers used to be the Seattle Pilots. Fifty-seven years for a first title. That's devotion.”",
+   "articles": [
+    {
+     "headline": "Milwaukee Brewers win World Series",
+     "publisher": "Spectrum News",
+     "date": "2026-10-28",
+     "url": "https://spectrumnews1.com/wi/milwaukee/news/2026/10/28/milwaukee-brewers-win-world-series"
+    },
+    {
+     "headline": "2026 World Series coverage",
+     "publisher": "FOX Sports",
+     "date": "",
+     "url": "https://www.foxsports.com/mlb/world-series?mm-view=app"
+    }
+   ]
+  },
+  {
+   "id": "olympics-la28",
+   "section": "olympics",
+   "sport": "Olympics",
+   "tag": "Olympics · LA28",
+   "headline": "Los Angeles 2028: what's new, and why it already matters",
+   "dek": "The Summer Games return to L.A. from July 14 to 30, 2028, with five new or returning sports, and tickets go on sale in phases from this year.",
+   "body": [
+    "The next Summer Olympics will be held in Los Angeles from July 14 to 30, 2028, followed by the Paralympics from August 15 to 27. It will be the city's third Games, after 1932 and 1984, which puts it alongside London and Paris as the only cities to host the Summer Olympics three times.",
+    "The programme has a distinctly American flavour. Flag football, a non-tackle version of American football, and squash will make their Olympic debuts. Lacrosse, cricket and baseball/softball return. Lacrosse and flag football will be played at BMO Stadium, beach volleyball at Alamitos Beach in Long Beach, and the football (soccer) finals at the Rose Bowl, which is hosting its third Olympics. Athletes will live at UCLA, as they did in 1984.",
+    "Organisers used this summer's World Cup matches in Los Angeles as a rehearsal for crowds, transport and security. The chief executive said nobody had ever staged an Olympics of this size and scope."
+   ],
+   "backstory": [
+    "The last Olympics were the Milan Cortina Winter Games in February 2026, where Team USA won 11 gold medals, its most ever at a Winter Olympics. The 1984 Los Angeles Games are remembered as the first privately financed Olympics, and as a turning point that made hosting the Games commercially viable."
+   ],
+   "glossary": [
+    {
+     "t": "Paralympics",
+     "d": "The Games for athletes with disabilities, held in the same city just after the Olympics."
+    },
+    {
+     "t": "Flag football",
+     "d": "American football without tackling. You stop a player by pulling a flag from their belt."
+    },
+    {
+     "t": "IOC",
+     "d": "The International Olympic Committee, which awards the Games and sets the sports programme."
+    }
+   ],
+   "people": [],
+   "question": {
+    "q": "Which of these sports will make its Olympic debut at LA28?",
+    "options": [
+     "Cricket",
+     "Squash",
+     "Baseball",
+     "Lacrosse"
+    ],
+    "answer": 1,
+    "explain": "Squash (along with flag football) is brand new. Cricket last appeared in 1900, lacrosse in 1908, and baseball/softball in 2021."
+   },
+   "why": "Home Olympics happen once a generation. Tickets and hospitality packages are being released in phases from this year, so it's worth planning now if you'd like to go.",
+   "dinner": "“They're adding flag football and squash to the Olympics. Which would you rather watch?”",
+   "articles": [
+    {
+     "headline": "LA28 to study Los Angeles World Cup matches as Olympic test case, CEO says",
+     "publisher": "Gulf Times (Reuters)",
+     "date": "2026-06-05",
+     "url": "https://www.gulf-times.com/article/726924/sport/la28-to-study-los-angeles-world-cup-matches-as-olympic-test-case-ceo-says"
+    },
+    {
+     "headline": "LA28 presents plans to world's press and broadcasters",
+     "publisher": "Olympics.com (IOC)",
+     "date": "2026-07",
+     "url": "https://www.olympics.com/ioc/news/la28-presents-plans-to-world-s-press-and-broadcasters"
+    },
+    {
+     "headline": "LA 2028 Olympics next steps: Competition schedule, tickets",
+     "publisher": "FOX 11 Los Angeles",
+     "date": "",
+     "url": "https://www.foxla.com/news/la-olympics-2028-update-november-14"
+    }
+   ]
+  },
+  {
+   "id": "olympics-calendar",
+   "section": "olympics",
+   "sport": "Olympics",
+   "tag": "Global events",
+   "headline": "The great international events, from Spain's World Cup to what comes next",
+   "dek": "A quick guide to the tournaments where nations, not clubs, compete, and the calendar ahead.",
+   "body": [
+    "Some of sport's most emotional moments come when countries play each other. This July, Spain won the men's World Cup, held across the United States, Canada and Mexico, beating Argentina 1–0 in extra time at MetLife Stadium in New Jersey. It was Spain's second title, after 2010. England beat France 6–4 in a wild third-place match.",
+    "Next summer, 2027, Brazil hosts the Women's World Cup, the first held in South America. Rugby's men's World Cup goes to Australia the same year. And golf's Ryder Cup, a fiercely partisan contest between teams from Europe and the United States, is due at Adare Manor in Ireland in 2027.",
+    "Then come the Los Angeles Olympics in July 2028, the biggest of them all."
+   ],
+   "backstory": [
+    "International tournaments are rare by design: most happen once every four years. That scarcity is part of their magic. A player might get only two or three chances in a whole career."
+   ],
+   "glossary": [
+    {
+     "t": "Third-place match",
+     "d": "A game between the two losing semifinalists to decide the bronze medal."
+    },
+    {
+     "t": "Ryder Cup",
+     "d": "A biennial team golf competition between Europe and the USA."
+    }
+   ],
+   "people": [],
+   "question": {
+    "q": "Which country will host the 2027 Women's World Cup?",
+    "options": [
+     "England",
+     "Brazil",
+     "Australia",
+     "Germany"
+    ],
+    "answer": 1,
+    "explain": "Brazil, the first time the Women's World Cup will be held in South America."
+   },
+   "why": "These are the events that bring casual viewers in, and the ones everyone remembers years later.",
+   "dinner": "“England lost the semifinal, then won the third-place game 6–4. Very English, somehow.”",
+   "articles": [
+    {
+     "headline": "Ferran Torres scores in extra time as Spain beats Argentina 1-0 to win the World Cup",
+     "publisher": "Santa Maria Times (AP)",
+     "date": "2026-07-19",
+     "url": "https://santamariatimes.com/ap/sports/ferran-torres-scores-in-extra-time-as-spain-beats-argentina-1-0-to-win-the/article_a8e21e5c-8c25-54ce-b065-7ebb7225d56f.html"
+    }
+   ]
+  }
+ ],
+ "sections": {
+  "nfl": {
+   "name": "NFL",
+   "sport": "Football",
+   "level": "Professional",
+   "season_note": "2026 season · Week 10 · Trade deadline Tue 4 PM ET",
+   "state_of_play": "We're at the halfway point and nobody is unbeaten. Buffalo (6–1) leads the AFC. In the NFC, San Francisco and Minnesota are 6–1, and Chicago (6–2) is the season's revelation. The Chargers haven't won a game (0–7), and the Eagles have slumped to 2–6. Seattle, last season's champions, are 4–4. In each conference, the four division winners and three wild cards make the playoffs.",
+   "stories": [
+    "nfl-deadline",
+    "nfl-lamar"
+   ],
+   "standings_note": "Wins–losses (–ties). ★ leads division.",
+   "standings": [
+    {
+     "group": "AFC leaders",
+     "rows": [
+      [
+       "Buffalo Bills",
+       "6–1",
+       "★ East"
+      ],
+      [
+       "Pittsburgh Steelers",
+       "6–2",
+       "★ North"
+      ],
+      [
+       "Jacksonville Jaguars",
+       "6–2",
+       "★ South"
+      ],
+      [
+       "Denver Broncos",
+       "6–2",
+       "★ West"
+      ],
+      [
+       "Kansas City Chiefs",
+       "5–2",
+       ""
+      ],
+      [
+       "Cincinnati Bengals",
+       "5–2",
+       ""
+      ]
+     ]
+    },
+    {
+     "group": "NFC leaders",
+     "rows": [
+      [
+       "San Francisco 49ers",
+       "6–1",
+       "★ West"
+      ],
+      [
+       "Minnesota Vikings",
+       "6–1",
+       "★ North"
+      ],
+      [
+       "New York Giants",
+       "4–2–1",
+       "★ East"
+      ],
+      [
+       "Carolina Panthers",
+       "3–4",
+       "★ South"
+      ],
+      [
+       "Chicago Bears",
+       "6–2",
+       ""
+      ],
+      [
+       "Detroit Lions",
+       "5–2",
+       ""
+      ]
+     ]
+    }
+   ],
+   "results": [
+    {
+     "when": "Thu Nov 5",
+     "line": "Jaguars 33, Ravens 10",
+     "note": ""
+    },
+    {
+     "when": "Mon Nov 2",
+     "line": "Bears 34, Seahawks 17",
+     "note": ""
+    },
+    {
+     "when": "Sun Nov 1",
+     "line": "Broncos 28, Chiefs 24",
+     "note": ""
+    },
+    {
+     "when": "Sun Nov 1",
+     "line": "Bills 36, Ravens 10",
+     "note": "The game Jackson was hurt"
+    }
+   ],
+   "upcoming": [
+    {
+     "when": "Sun 9:30 AM",
+     "line": "Bengals vs Falcons (Madrid)",
+     "note": ""
+    },
+    {
+     "when": "Sun 4:25 PM",
+     "line": "Packers at Patriots",
+     "note": "Both 5–3"
+    },
+    {
+     "when": "Sun 8:20 PM",
+     "line": "Buccaneers at Bears",
+     "note": "Sunday Night Football"
+    },
+    {
+     "when": "Mon 8:15 PM",
+     "line": "Bills at Vikings",
+     "note": "6–1 vs 6–1"
+    }
+   ],
+   "injuries": [
+    {
+     "player": "Lamar Jackson",
+     "team": "Ravens · QB",
+     "status": "Out (IR)",
+     "detail": "Right thumb surgery. May miss the season."
+    },
+    {
+     "player": "Myles Garrett",
+     "team": "Rams · DE",
+     "status": "Returning",
+     "detail": "Back at practice after a spell on injured reserve."
+    }
+   ],
+   "profiles": [
+    {
+     "name": "Josh Allen",
+     "team": "Buffalo Bills",
+     "position": "Quarterback",
+     "facts": [
+      "2024 NFL MVP",
+      "Bills are 6–1, top of the AFC"
+     ],
+     "blurb": "Big, strong and gloriously reckless. He runs over linebackers and throws from impossible angles."
+    },
+    {
+     "name": "Lamar Jackson",
+     "team": "Baltimore Ravens",
+     "position": "Quarterback",
+     "facts": [
+      "Two-time MVP (2019, 2023)",
+      "Out after thumb surgery"
+     ],
+     "blurb": "Perhaps the finest running quarterback ever. His injury has upended Baltimore's season."
+    },
+    {
+     "name": "Caleb Williams",
+     "team": "Chicago Bears",
+     "position": "Quarterback",
+     "facts": [
+      "No. 1 overall pick, 2024",
+      "Bears are 6–2"
+     ],
+     "blurb": "In his third season, he has become Chicago's comeback specialist."
+    }
+   ],
+   "articles": []
+  },
+  "cfb": {
+   "name": "College Football",
+   "sport": "Football",
+   "level": "College",
+   "season_note": "2026 season · Playoff rankings every Tuesday · Bracket Dec 6",
+   "state_of_play": "With four weeks left in the regular season, Miami (8–0) sit first in the playoff rankings, ahead of Georgia, Utah (9–0) and Indiana, last season's national champions. UCLA (9–0) are the surprise of the year. Tonight's Miami–Notre Dame game is the week's centrepiece, with Ohio State–Oregon and LSU–Alabama also on today's slate.",
+   "stories": [
+    "cfb-nd-miami",
+    "cfb-rankings"
+   ],
+   "standings_note": "College Football Playoff rankings, released Nov 3.",
+   "standings": [
+    {
+     "group": "CFP rankings (Nov 3) · current records",
+     "rows": [
+      [
+       "Miami (FL)",
+       "8–0",
+       ""
+      ],
+      [
+       "Georgia",
+       "7–1",
+       ""
+      ],
+      [
+       "Utah",
+       "9–0",
+       ""
+      ],
+      [
+       "Indiana",
+       "8–1",
+       ""
+      ],
+      [
+       "Alabama",
+       "6–2",
+       ""
+      ],
+      [
+       "Kentucky",
+       "7–1",
+       ""
+      ],
+      [
+       "Texas",
+       "7–2",
+       ""
+      ],
+      [
+       "UCLA",
+       "9–0",
+       "First-year coach"
+      ],
+      [
+       "BYU",
+       "7–2",
+       ""
+      ],
+      [
+       "Ole Miss",
+       "6–2",
+       ""
+      ],
+      [
+       "Notre Dame",
+       "7–1",
+       "Hosts Miami tonight"
+      ],
+      [
+       "Ohio State",
+       "6–2",
+       ""
+      ]
+     ]
+    }
+   ],
+   "results": [
+    {
+     "when": "Sat Nov 7",
+     "line": "Ohio State vs Oregon · LSU vs Alabama",
+     "note": "Under way at press time"
+    }
+   ],
+   "upcoming": [
+    {
+     "when": "Sat 7:30 PM",
+     "line": "Miami at Notre Dame",
+     "note": "NBC / Peacock"
+    },
+    {
+     "when": "Sat 7:30 PM",
+     "line": "Michigan State at Michigan",
+     "note": "In-state rivalry"
+    },
+    {
+     "when": "Tue 9:00 PM",
+     "line": "New CFP rankings",
+     "note": "ESPN"
+    }
+   ],
+   "injuries": [],
+   "profiles": [
+    {
+     "name": "Darian Mensah",
+     "team": "Miami Hurricanes",
+     "position": "Quarterback",
+     "facts": [
+      "Leads 8–0 Miami"
+     ],
+     "blurb": "Calm, accurate and the engine of the nation's top-ranked team."
+    },
+    {
+     "name": "Marcus Freeman",
+     "team": "Notre Dame",
+     "position": "Head coach",
+     "facts": [
+      "Fifth season in charge"
+     ],
+     "blurb": "A former Ohio State linebacker who has made Notre Dame a perennial contender again."
+    }
+   ],
+   "articles": []
+  },
+  "nba": {
+   "name": "NBA",
+   "sport": "Basketball",
+   "level": "Professional",
+   "season_note": "2026–27 season · about three weeks in",
+   "state_of_play": "The Lakers and 76ers (both 8–2) lead their conferences, with Houston, Oklahoma City and San Antonio all 7–2 in a crowded West. The defending champion Knicks are 4–4. The in-season NBA Cup tournament starts soon.",
+   "stories": [
+    "nba-luka-lebron"
+   ],
+   "standings_note": "Top six go straight to the playoffs. 7–10 enter the play-in.",
+   "standings": [
+    {
+     "group": "East",
+     "rows": [
+      [
+       "Philadelphia 76ers",
+       "8–2",
+       ""
+      ],
+      [
+       "Boston Celtics",
+       "7–2",
+       ""
+      ],
+      [
+       "Detroit Pistons",
+       "6–2",
+       ""
+      ],
+      [
+       "Atlanta Hawks",
+       "6–4",
+       ""
+      ],
+      [
+       "Toronto Raptors",
+       "5–4",
+       ""
+      ],
+      [
+       "Cleveland Cavaliers",
+       "5–4",
+       ""
+      ]
+     ]
+    },
+    {
+     "group": "West",
+     "rows": [
+      [
+       "Los Angeles Lakers",
+       "8–2",
+       ""
+      ],
+      [
+       "Houston Rockets",
+       "7–2",
+       ""
+      ],
+      [
+       "Oklahoma City Thunder",
+       "7–2",
+       ""
+      ],
+      [
+       "San Antonio Spurs",
+       "7–2",
+       ""
+      ],
+      [
+       "Portland Trail Blazers",
+       "6–2",
+       ""
+      ],
+      [
+       "Minnesota Timberwolves",
+       "7–3",
+       ""
+      ]
+     ]
+    }
+   ],
+   "results": [
+    {
+     "when": "Fri Nov 6",
+     "line": "Cavaliers 119, 76ers 95",
+     "note": ""
+    },
+    {
+     "when": "Fri Nov 6",
+     "line": "Lakers 124, Trail Blazers 118",
+     "note": ""
+    },
+    {
+     "when": "Fri Nov 6",
+     "line": "Celtics 119, Hornets 80",
+     "note": ""
+    }
+   ],
+   "upcoming": [
+    {
+     "when": "Sat 8:00 PM",
+     "line": "Knicks at Cavaliers",
+     "note": ""
+    },
+    {
+     "when": "Sun 6:00 PM",
+     "line": "Lakers at Pistons",
+     "note": ""
+    },
+    {
+     "when": "Tue Nov 10",
+     "line": "Celtics at 76ers",
+     "note": "Rivalry night"
+    }
+   ],
+   "injuries": [],
+   "profiles": [
+    {
+     "name": "Luka Dončić",
+     "team": "Los Angeles Lakers",
+     "position": "Guard",
+     "facts": [
+      "Slovenian",
+      "Early MVP favourite"
+     ],
+     "blurb": "Seems to play in slow motion and still scores whenever he likes."
+    },
+    {
+     "name": "LeBron James",
+     "team": "Philadelphia 76ers",
+     "position": "Forward",
+     "facts": [
+      "NBA's all-time leading scorer",
+      "Record 24th season"
+     ],
+     "blurb": "Every move he makes becomes the league's main storyline."
+    },
+    {
+     "name": "Victor Wembanyama",
+     "team": "San Antonio Spurs",
+     "position": "Center",
+     "facts": [
+      "French",
+      "7 ft 4 in"
+     ],
+     "blurb": "A giant who handles the ball like a guard. Nobody has seen anything quite like him."
+    }
+   ],
+   "articles": []
+  },
+  "cbb": {
+   "name": "College Basketball",
+   "sport": "Basketball",
+   "level": "College",
+   "season_note": "2026–27 season · men's and women's · opened Nov 1",
+   "state_of_play": "Florida (men) and South Carolina (women) start as No. 1. Michigan's men and UCLA's women are the defending national champions. The season builds slowly towards March Madness.",
+   "stories": [
+    "cbb-season",
+    "cbb-women"
+   ],
+   "standings_note": "Preseason AP Top 25 (top five).",
+   "standings": [
+    {
+     "group": "Men's AP preseason",
+     "rows": [
+      [
+       "Florida",
+       "No. 1",
+       ""
+      ],
+      [
+       "Duke",
+       "No. 2",
+       ""
+      ],
+      [
+       "Illinois",
+       "No. 3",
+       ""
+      ],
+      [
+       "UConn",
+       "No. 4",
+       ""
+      ]
+     ]
+    },
+    {
+     "group": "Women's AP preseason",
+     "rows": [
+      [
+       "South Carolina",
+       "No. 1",
+       ""
+      ],
+      [
+       "UConn",
+       "No. 2",
+       ""
+      ],
+      [
+       "USC",
+       "No. 3",
+       ""
+      ],
+      [
+       "Michigan",
+       "No. 5",
+       ""
+      ]
+     ]
+    }
+   ],
+   "results": [
+    {
+     "when": "Sat Nov 7",
+     "line": "Memphis 89, VCU 88",
+     "note": "Men's"
+    },
+    {
+     "when": "Sat Nov 7",
+     "line": "Louisville 107, Morehead State 57",
+     "note": "Men's"
+    },
+    {
+     "when": "Sat Nov 7",
+     "line": "St. John's 102, Wagner 33",
+     "note": "Women's"
+    }
+   ],
+   "upcoming": [
+    {
+     "when": "Sun 1:00 PM",
+     "line": "Duke at Florida Atlantic",
+     "note": "Women's"
+    },
+    {
+     "when": "Sun 12:00 PM",
+     "line": "Iona at St. John's",
+     "note": "Men's"
+    }
+   ],
+   "injuries": [],
+   "profiles": [
+    {
+     "name": "Dawn Staley",
+     "team": "South Carolina",
+     "position": "Head coach (women's)",
+     "facts": [
+      "Three-time Olympic gold medallist as a player",
+      "Multiple national titles as coach"
+     ],
+     "blurb": "Perhaps the most influential figure in women's college basketball."
+    },
+    {
+     "name": "Sarah Strong",
+     "team": "UConn",
+     "position": "Forward (women's)",
+     "facts": [
+      "One of the nation's best players"
+     ],
+     "blurb": "A versatile, elegant forward at the sport's most famous programme."
+    },
+    {
+     "name": "Todd Golden",
+     "team": "Florida",
+     "position": "Head coach (men's)",
+     "facts": [
+      "Won 2025 national title"
+     ],
+     "blurb": "His Gators begin as the preseason No. 1."
+    }
+   ],
+   "articles": []
+  },
+  "mlb": {
+   "name": "MLB",
+   "sport": "Baseball",
+   "level": "Professional",
+   "season_note": "Offseason · awards next week · 2027 season starts in late March",
+   "state_of_play": "The Milwaukee Brewers are champions for the first time, having beaten Tampa Bay in the World Series. Now the awards are announced and free agency is open, the 'hot stove' season of trades and signings.",
+   "stories": [
+    "mlb-brewers"
+   ],
+   "standings_note": "",
+   "standings": [],
+   "results": [
+    {
+     "when": "Wed Oct 28",
+     "line": "Brewers win the World Series vs Rays",
+     "note": "First title in franchise history"
+    }
+   ],
+   "upcoming": [
+    {
+     "when": "Next week",
+     "line": "MLB awards",
+     "note": "Rookie of the Year, Manager, Cy Young, MVP"
+    }
+   ],
+   "injuries": [],
+   "profiles": [
+    {
+     "name": "William Contreras",
+     "team": "Milwaukee Brewers",
+     "position": "Catcher",
+     "facts": [
+      "2026 World Series MVP",
+      "Hit .381 in the Series"
+     ],
+     "blurb": "A catcher calls every pitch, so it's a thinking player's position."
+    },
+    {
+     "name": "Christian Yelich",
+     "team": "Milwaukee Brewers",
+     "position": "Outfielder",
+     "facts": [
+      "2018 NL MVP",
+      "Long-time face of the club"
+     ],
+     "blurb": "Finally a champion after years as Milwaukee's star."
+    },
+    {
+     "name": "Shohei Ohtani",
+     "team": "Los Angeles Dodgers",
+     "position": "Pitcher / hitter",
+     "facts": [
+      "Elite at both pitching and hitting"
+     ],
+     "blurb": "Nobody has done both at this level since Babe Ruth."
+    }
+   ],
+   "articles": []
+  },
+  "mls": {
+   "name": "MLS",
+   "sport": "Soccer",
+   "level": "Professional · USA",
+   "season_note": "Decision Day today · Playoffs from Nov 18 · MLS Cup Dec 18",
+   "state_of_play": "Nashville SC have had a historic season and won the Supporters' Shield. Vancouver lead the West, and defending champions Inter Miami are second in the East. After today, the league breaks for international matches before the playoffs.",
+   "stories": [
+    "mls-nashville"
+   ],
+   "standings_note": "Win = 3 points, draw = 1. Seeds 1–7 go straight through; 8–9 play a wild card. Standings before today's final matches.",
+   "standings": [
+    {
+     "group": "East",
+     "rows": [
+      [
+       "Nashville SC",
+       "74 pts",
+       "Shield winners"
+      ],
+      [
+       "Inter Miami",
+       "62 pts",
+       ""
+      ],
+      [
+       "New England",
+       "58 pts",
+       ""
+      ],
+      [
+       "Chicago Fire",
+       "56 pts",
+       ""
+      ]
+     ]
+    },
+    {
+     "group": "West",
+     "rows": [
+      [
+       "Vancouver",
+       "62 pts",
+       ""
+      ],
+      [
+       "FC Dallas",
+       "55 pts",
+       ""
+      ],
+      [
+       "San Jose",
+       "52 pts",
+       ""
+      ],
+      [
+       "St. Louis City",
+       "51 pts",
+       ""
+      ]
+     ]
+    }
+   ],
+   "results": [
+    {
+     "when": "Sat (late)",
+     "line": "Inter Miami 3, Charlotte 0",
+     "note": "Score late in the game"
+    },
+    {
+     "when": "Sat (late)",
+     "line": "Philadelphia 3, Toronto 0",
+     "note": "Score late in the game"
+    },
+    {
+     "when": "Sat (late)",
+     "line": "Cincinnati 0, Nashville 1",
+     "note": "Leading late, record in sight"
+    }
+   ],
+   "upcoming": [
+    {
+     "when": "Sat 7:00 PM",
+     "line": "All Western Conference finales",
+     "note": "Final playoff places"
+    },
+    {
+     "when": "Week of Nov 18",
+     "line": "Wild-card matches",
+     "note": ""
+    },
+    {
+     "when": "Fri Dec 18",
+     "line": "MLS Cup",
+     "note": ""
+    }
+   ],
+   "injuries": [],
+   "profiles": [
+    {
+     "name": "Lionel Messi",
+     "team": "Inter Miami",
+     "position": "Forward",
+     "facts": [
+      "2022 World Cup winner",
+      "Led Miami to 2025 MLS Cup"
+     ],
+     "blurb": "Widely considered the greatest player of all time."
+    },
+    {
+     "name": "Sam Surridge",
+     "team": "Nashville SC",
+     "position": "Striker",
+     "facts": [
+      "19 regular-season goals"
+     ],
+     "blurb": "An English striker who has become an MVP candidate."
+    },
+    {
+     "name": "Hany Mukhtar",
+     "team": "Nashville SC",
+     "position": "Attacking midfielder",
+     "facts": [
+      "2022 MLS MVP"
+     ],
+     "blurb": "Nashville's creative heart since their first season."
+    }
+   ],
+   "articles": []
+  },
+  "nwsl": {
+   "name": "NWSL",
+   "sport": "Soccer",
+   "level": "Professional · Women's",
+   "season_note": "Playoffs · Semifinals Nov 13–15 · Championship Nov 21, Washington DC",
+   "state_of_play": "Gotham FC, the reigning champions, won the Shield for the best regular season. The eight-team playoffs began with two 1–0 results: Utah's upset of San Diego and Kansas City's extra-time win over Angel City. Gotham–Seattle and Washington–Portland follow on Sunday.",
+   "stories": [
+    "nwsl-quarterfinals"
+   ],
+   "standings_note": "Playoff seeds",
+   "standings": [
+    {
+     "group": "Quarterfinals",
+     "rows": [
+      [
+       "(7) Utah Royals",
+       "1–0",
+       "beat (2) San Diego"
+      ],
+      [
+       "(4) Kansas City Current",
+       "1–0 AET",
+       "beat (5) Angel City"
+      ],
+      [
+       "(1) Gotham FC",
+       "Sun",
+       "vs (8) Seattle Reign"
+      ],
+      [
+       "(3) Washington Spirit",
+       "Sun",
+       "vs (6) Portland Thorns"
+      ]
+     ]
+    }
+   ],
+   "results": [
+    {
+     "when": "Fri Nov 6",
+     "line": "Utah Royals 1, San Diego Wave 0",
+     "note": "Utah's first playoff win"
+    },
+    {
+     "when": "Sat Nov 7",
+     "line": "Kansas City 1, Angel City 0 (AET)",
+     "note": "96th-minute penalty"
+    }
+   ],
+   "upcoming": [
+    {
+     "when": "Sun 12:30 PM",
+     "line": "Gotham FC vs Seattle Reign",
+     "note": ""
+    },
+    {
+     "when": "Sun 3:00 PM",
+     "line": "Washington Spirit vs Portland Thorns",
+     "note": "ABC"
+    },
+    {
+     "when": "Sat Nov 21",
+     "line": "NWSL Championship",
+     "note": "Audi Field, Washington"
+    }
+   ],
+   "injuries": [],
+   "profiles": [
+    {
+     "name": "Trinity Rodman",
+     "team": "Washington Spirit",
+     "position": "Forward",
+     "facts": [
+      "U.S. international"
+     ],
+     "blurb": "Fast, fearless and one of the most exciting players in the world."
+    },
+    {
+     "name": "Sophia Wilson",
+     "team": "Portland Thorns",
+     "position": "Forward",
+     "facts": [
+      "Returned after birth of her first child"
+     ],
+     "blurb": "A clinical finisher and one of America's best strikers."
+    }
+   ],
+   "articles": []
+  },
+  "europe": {
+   "name": "European Soccer",
+   "sport": "Soccer",
+   "level": "Professional · Overseas",
+   "season_note": "2026–27 · Premier League, La Liga, Champions League",
+   "state_of_play": "In England, champions Arsenal lead by six points after Manchester City's third straight defeat, and Manchester United have dropped into the bottom three. In Spain, Barcelona and Real Madrid are level at the top. In the Champions League, Como made history with a 9–1 win at Lens. International fixtures pause club football after this weekend.",
+   "stories": [
+    "europe-forest-city",
+    "europe-como"
+   ],
+   "standings_note": "Bottom three in the Premier League are relegated.",
+   "standings": [
+    {
+     "group": "Premier League (top)",
+     "rows": [
+      [
+       "Arsenal",
+       "27 pts",
+       "Champions"
+      ],
+      [
+       "Manchester City",
+       "21 pts",
+       ""
+      ],
+      [
+       "Brighton",
+       "19 pts",
+       ""
+      ],
+      [
+       "Chelsea",
+       "16 pts",
+       ""
+      ]
+     ]
+    },
+    {
+     "group": "La Liga (top)",
+     "rows": [
+      [
+       "Barcelona",
+       "30 pts",
+       ""
+      ],
+      [
+       "Real Madrid",
+       "30 pts",
+       ""
+      ],
+      [
+       "Atlético Madrid",
+       "28 pts",
+       ""
+      ],
+      [
+       "Real Betis",
+       "23 pts",
+       ""
+      ]
+     ]
+    }
+   ],
+   "results": [
+    {
+     "when": "Sat Nov 7",
+     "line": "Nottingham Forest 3, Man City 1",
+     "note": ""
+    },
+    {
+     "when": "Sat Nov 7",
+     "line": "Arsenal 1, Hull City 0",
+     "note": ""
+    },
+    {
+     "when": "Wed Nov 4",
+     "line": "Lens 1, Como 9",
+     "note": "Champions League"
+    }
+   ],
+   "upcoming": [
+    {
+     "when": "Sun 11:30 AM",
+     "line": "Man United vs Aston Villa",
+     "note": ""
+    },
+    {
+     "when": "Tue Nov 24",
+     "line": "Arsenal vs Dortmund",
+     "note": "Champions League"
+    }
+   ],
+   "injuries": [],
+   "profiles": [
+    {
+     "name": "Liam Delap",
+     "team": "Nottingham Forest",
+     "position": "Striker",
+     "facts": [
+      "Came through City's academy",
+      "Two goals against City today"
+     ],
+     "blurb": "A powerful young English forward who loves a counter-attack."
+    },
+    {
+     "name": "Cesc Fàbregas",
+     "team": "Como",
+     "position": "Manager",
+     "facts": [
+      "2010 World Cup winner",
+      "Played for Arsenal, Barcelona, Chelsea"
+     ],
+     "blurb": "One of the great passers, now a coach making history."
+    },
+    {
+     "name": "Lamine Yamal",
+     "team": "Barcelona",
+     "position": "Winger",
+     "facts": [
+      "World Cup winner with Spain at 19"
+     ],
+     "blurb": "The young genius the whole sport is watching."
+    }
+   ],
+   "articles": []
+  },
+  "csoc": {
+   "name": "College Soccer",
+   "sport": "Soccer",
+   "level": "College",
+   "season_note": "Conference tournaments now · NCAA selection Nov 16 · College Cup Dec 11–14, Cary NC",
+   "state_of_play": "Conference tournaments are deciding automatic bids. SMU top the men's coaches' poll, and Florida State are the defending women's champions. For the first time, both College Cups share a weekend.",
+   "stories": [
+    "csoc-college-cup"
+   ],
+   "standings_note": "United Soccer Coaches men's poll (latest).",
+   "standings": [
+    {
+     "group": "Men's top 3",
+     "rows": [
+      [
+       "SMU",
+       "12–0–2",
+       ""
+      ],
+      [
+       "Georgetown",
+       "13–1–1",
+       ""
+      ],
+      [
+       "Clemson",
+       "11–2–2",
+       ""
+      ]
+     ]
+    }
+   ],
+   "results": [],
+   "upcoming": [
+    {
+     "when": "Mon Nov 16",
+     "line": "Women's bracket revealed",
+     "note": ""
+    },
+    {
+     "when": "Nov 20–22",
+     "line": "Women's first round",
+     "note": ""
+    },
+    {
+     "when": "Dec 11–14",
+     "line": "Men's & women's College Cups",
+     "note": "Cary, NC"
+    }
+   ],
+   "injuries": [],
+   "profiles": [],
+   "articles": []
+  },
+  "olympics": {
+   "name": "Olympics & Global",
+   "sport": "Olympics",
+   "level": "International",
+   "season_note": "Next Summer Games: Los Angeles, July 14–30, 2028",
+   "state_of_play": "After a summer of World Cup football and a record winter in Milan Cortina for Team USA, attention turns to LA28. Five new or returning sports join the programme, and tickets are being released in phases.",
+   "stories": [
+    "olympics-la28",
+    "olympics-calendar"
+   ],
+   "standings_note": "",
+   "standings": [],
+   "results": [
+    {
+     "when": "Jul 19, 2026",
+     "line": "Spain 1, Argentina 0 (AET)",
+     "note": "World Cup final"
+    },
+    {
+     "when": "Feb 2026",
+     "line": "Team USA: 11 golds at Milan Cortina",
+     "note": "Winter record"
+    }
+   ],
+   "upcoming": [
+    {
+     "when": "2027",
+     "line": "Women's World Cup · Brazil",
+     "note": ""
+    },
+    {
+     "when": "2027",
+     "line": "Ryder Cup · Adare Manor, Ireland",
+     "note": ""
+    },
+    {
+     "when": "Jul 14–30, 2028",
+     "line": "Summer Olympics · Los Angeles",
+     "note": ""
+    }
+   ],
+   "injuries": [],
+   "profiles": [],
+   "articles": []
+  }
+ },
+ "upcoming": [
+  {
+   "sport": "Football",
+   "when": "Sat 7:30 PM",
+   "matchup": "Miami at Notre Dame",
+   "note": "College football's game of the night"
+  },
+  {
+   "sport": "Soccer",
+   "when": "Sat 7:00 PM",
+   "matchup": "MLS Western finales",
+   "note": "Last playoff places decided"
+  },
+  {
+   "sport": "Soccer",
+   "when": "Sun 12:30 PM",
+   "matchup": "Gotham FC vs Seattle Reign",
+   "note": "NWSL quarterfinal"
+  },
+  {
+   "sport": "Soccer",
+   "when": "Sun 3:00 PM",
+   "matchup": "Spirit vs Thorns",
+   "note": "Rodman vs Wilson, on ABC"
+  },
+  {
+   "sport": "Football",
+   "when": "Sun 9:30 AM",
+   "matchup": "Bengals vs Falcons",
+   "note": "In Madrid"
+  },
+  {
+   "sport": "Basketball",
+   "when": "Sun 6:00 PM",
+   "matchup": "Lakers at Pistons",
+   "note": ""
+  },
+  {
+   "sport": "Football",
+   "when": "Mon 8:15 PM",
+   "matchup": "Bills at Vikings",
+   "note": "Monday Night Football"
+  },
+  {
+   "sport": "Football",
+   "when": "Tue 4:00 PM",
+   "matchup": "NFL trade deadline",
+   "note": ""
+  }
+ ],
+ "quiz": [
+  {
+   "sport": "Soccer",
+   "q": "Liam Delap scored twice against Manchester City today. Which club did he come through as a youngster?",
+   "options": [
+    "Manchester United",
+    "Manchester City",
+    "Arsenal",
+    "Chelsea"
+   ],
+   "answer": 1,
+   "explain": "He came through City's academy, which made his double all the sweeter for Forest."
+  },
+  {
+   "sport": "Football",
+   "q": "What is college football's playoff selection committee responsible for?",
+   "options": [
+    "Setting TV schedules",
+    "Ranking teams and choosing the 12-team field",
+    "Disciplining players",
+    "Choosing the Heisman winner"
+   ],
+   "answer": 1,
+   "explain": "It publishes a top 25 every Tuesday in November and picks the 12 playoff teams on December 6."
+  },
+  {
+   "sport": "Olympics",
+   "q": "Los Angeles has hosted the Summer Olympics before. In which years?",
+   "options": [
+    "1932 and 1984",
+    "1948 and 1996",
+    "1904 and 1984",
+    "1960 and 1980"
+   ],
+   "answer": 0,
+   "explain": "1932 and 1984. 2028 will be its third Games."
+  },
+  {
+   "sport": "Soccer",
+   "q": "In the NWSL, which club won its first-ever Shield for the best regular season this year?",
+   "options": [
+    "Portland Thorns",
+    "Gotham FC",
+    "Kansas City Current",
+    "Washington Spirit"
+   ],
+   "answer": 1,
+   "explain": "Gotham FC, who are also the reigning champions."
+  },
+  {
+   "sport": "Basketball",
+   "q": "In basketball, what is a 'triple-double'?",
+   "options": [
+    "Three overtimes",
+    "Double figures in three statistical categories",
+    "Scoring three three-pointers in a row",
+    "Three players scoring 20"
+   ],
+   "answer": 1,
+   "explain": "Ten or more in three categories, such as points, rebounds and assists, in one game."
+  },
+  {
+   "sport": "Baseball",
+   "q": "For the book lover: who wrote the baseball novel 'The Natural', later a Robert Redford film?",
+   "options": [
+    "John Updike",
+    "Bernard Malamud",
+    "Philip Roth",
+    "Don DeLillo"
+   ],
+   "answer": 1,
+   "explain": "Bernard Malamud published 'The Natural' in 1952, a mythic tale of the gifted, doomed Roy Hobbs."
+  }
+ ],
+ "quiz_history": [
+  "Which team won the 2026 World Series, the first championship in its history?",
+  "In soccer standings, how many points does a team get for a win?",
+  "Spain won the 2026 World Cup this July. Who did they beat in the final at MetLife Stadium?",
+  "LeBron James left the Lakers this summer. Where is he playing his 24th season?",
+  "For the book lover: Ernest Thayer's 1888 poem \"Casey at the Bat\" ends with mighty Casey doing what?",
+  "What does it mean when a player is placed on 'injured reserve' (IR) in the NFL?",
+  "Nashville SC came into Decision Day tied with the MLS single-season points record (74). Which team set that record in 2024?",
+  "With Lamar Jackson injured, the Ravens traded for which veteran quarterback?",
+  "Which of these players is a finalist for 2026 National League MVP?",
+  "A player is fouled while attempting a three-point shot and misses. How many free throws does he get?",
+  "How many points is a 'safety' worth in football?",
+  "For the book lover: in Hemingway's 'The Old Man and the Sea', the fisherman Santiago idolizes which baseball player?",
+  "Liam Delap scored twice against Manchester City today. Which club did he come through as a youngster?",
+  "What is college football's playoff selection committee responsible for?",
+  "Los Angeles has hosted the Summer Olympics before. In which years?",
+  "In the NWSL, which club won its first-ever Shield for the best regular season this year?",
+  "In basketball, what is a 'triple-double'?",
+  "For the book lover: who wrote the baseball novel 'The Natural', later a Robert Redford film?"
+ ],
+ "sources": [
+  {
+   "title": "Live scores & standings (Sportradar data)",
+   "url": "https://www.sportradar.com"
+  },
+  {
+   "title": "ESPN: Forest condemn Man City to third straight loss",
+   "url": "https://www.espn.com/soccer/story/_/id/50410354/manchester-city-nottingham-forest-premier-league-loss"
+  },
+  {
+   "title": "NCAA.com: First College Football Playoff rankings of 2026",
+   "url": "https://ncaa.com/news/football/article/2026-11-03/miami-georgia-lead-first-college-football-playoff-rankings-2026"
+  },
+  {
+   "title": "MLSsoccer.com: Nashville chase points record",
+   "url": "https://www.mlssoccer.com/news/nashville-sc-chase-mls-points-record-on-decision-day-history"
+  },
+  {
+   "title": "AP: Utah Royals stun San Diego Wave",
+   "url": "https://abcnews.com/Sports/wireStory/utah-royals-stun-san-diego-wave-1-0-137936645"
+  },
+  {
+   "title": "ESPN: NFL trade deadline tracker",
+   "url": "https://espn.com/nfl/story/_/id/50043471/2026-trade-deadline-updates-latest-news-deals-terms"
+  },
+  {
+   "title": "NCAA.com: Women's basketball preseason AP Top 25",
+   "url": "https://ncaa.com/news/basketball-women/article/2026-10-20/south-carolina-leads-2026-preseason-ap-top-25-womens-basketball-rankings"
+  },
+  {
+   "title": "Field Level Media: Florida No. 1 in men's preseason poll",
+   "url": "https://fieldlevelmedia.com/ncaab/florida-selected-runaway-no-1-team-in-preseason-ap-top-25/"
+  },
+  {
+   "title": "NCAA.com: Women's soccer road to the championship",
+   "url": "https://www.ncaa.com/championships/soccer-women/d1/road-to-the-championship"
+  },
+  {
+   "title": "Irish Examiner: Como 9-1 Lens",
+   "url": "https://www.irishexaminer.com/sport/soccer/arid-41933457.html"
+  },
+  {
+   "title": "Gulf Times/Reuters: LA28 and the World Cup test",
+   "url": "https://www.gulf-times.com/article/726924/sport/la28-to-study-los-angeles-world-cup-matches-as-olympic-test-case-ceo-says"
+  }
+ ]
+}
